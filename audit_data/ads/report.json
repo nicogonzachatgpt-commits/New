@@ -1,0 +1,174 @@
+[
+  {
+    "n": 1,
+    "advertiser": "Justicia Legal",
+    "ad_id": "951677597942307",
+    "landing_urls": [
+      "http://www.justicia-legal.com/",
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 2,
+    "advertiser": "MH Hernandez y Marquez",
+    "ad_id": "1365672848989032",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 3,
+    "advertiser": "Carmona y Asociados",
+    "ad_id": "2252244138871351",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 4,
+    "advertiser": "Sesionlegal",
+    "ad_id": "887514730709583",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 5,
+    "advertiser": "GPO Abogados",
+    "ad_id": "1578829283835086",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 6,
+    "advertiser": "VV Abogados",
+    "ad_id": "1905051170175029",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 7,
+    "advertiser": "MG Consultoria Legal",
+    "ad_id": "986585681064377",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 8,
+    "advertiser": "Silerio Abogados",
+    "ad_id": "1362783258680724",
+    "landing_urls": [
+      "http://fb.me/",
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 9,
+    "advertiser": "Soluciones Juridicas YA",
+    "ad_id": "2597861210648308",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 10,
+    "advertiser": "Garza y Asociados",
+    "ad_id": "2174647866731058",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 11,
+    "advertiser": "Virtus Legal",
+    "ad_id": "966522453125941",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 12,
+    "advertiser": "R&B Soluciones Juridicas",
+    "ad_id": "2123232178602563",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 13,
+    "advertiser": "Abogados Saltillo",
+    "ad_id": "4466541720224087",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 14,
+    "advertiser": "Rosales-Abogados",
+    "ad_id": "1028719923252734",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 15,
+    "advertiser": "Tejada Rodrigo y Asociados",
+    "ad_id": "945232231917427",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "n": 16,
+    "advertiser": "Abogados en Puebla de Confianza",
+    "ad_id": "1362049826124718",
+    "landing_urls": [
+      "https://metastatus.com/ads-transparency"
+    ]
+  },
+  {
+    "landing": {
+      "advertiser": "Justicia Legal",
+      "url": "http://www.justicia-legal.com/",
+      "slug": "justicia-legal.com",
+      "mobile_load_s": 1.34,
+      "title": "Justicia legal",
+      "whatsapp_links": 2,
+      "tel_links": 0,
+      "form_inputs": 0,
+      "h1": "¿Tuviste un accidente grave? Tránsito o líneas eléctricas",
+      "desktop_load_s": 1.38
+    }
+  },
+  {
+    "landing": {
+      "advertiser": "Justicia Legal",
+      "url": "https://metastatus.com/ads-transparency",
+      "slug": "metastatus.com",
+      "mobile_load_s": 0.67,
+      "title": "Ads Transparency Status",
+      "whatsapp_links": 0,
+      "tel_links": 0,
+      "form_inputs": 0,
+      "h1": "Ads Transparency Status",
+      "desktop_load_s": 0.41
+    }
+  },
+  {
+    "landing": {
+      "advertiser": "Silerio Abogados",
+      "url": "http://fb.me/",
+      "slug": "fb.me",
+      "mobile_load_s": 1.08,
+      "title": "Facebook",
+      "whatsapp_links": 0,
+      "tel_links": 0,
+      "form_inputs": 2,
+      "h1": "",
+      "desktop_load_s": 0.64
+    }
+  }
+]
