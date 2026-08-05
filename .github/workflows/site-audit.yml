@@ -1,0 +1,30 @@
+name: Screenshot candidate websites for audit video
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/tiktok-video-analysis-xhzuwd]
+    paths: ['.github/workflows/site-audit.yml', 'audit/screenshot.py']
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+      - name: Capture screenshots
+        run: python audit/screenshot.py
+      - name: Commit results back to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase || true
+          git add -A audit_data
+          git commit -m "Add website screenshots for audit video" || echo "nothing to commit"
+          git push || true
