@@ -1,0 +1,42 @@
+name: Fetch TikTok videos for analysis
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/tiktok-video-analysis-xhzuwd]
+    paths: ['.github/workflows/tiktok-fetch.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install yt-dlp
+        run: pip install -U yt-dlp
+      - name: Fetch profile metadata
+        run: |
+          mkdir -p tiktok_data
+          yt-dlp --flat-playlist -J "https://www.tiktok.com/@gonzaher2" \
+            > tiktok_data/profile.json 2> tiktok_data/metadata_errors.log || true
+          echo "--- metadata fetch exit; size:"
+          wc -c tiktok_data/profile.json || true
+          tail -5 tiktok_data/metadata_errors.log || true
+      - name: Download latest 15 videos
+        run: |
+          cd tiktok_data
+          yt-dlp -f "best[filesize<25M]/best" -I 1:15 \
+            --write-info-json --no-write-playlist-metafiles \
+            -o "%(autonumber)02d_%(id)s.%(ext)s" \
+            "https://www.tiktok.com/@gonzaher2" 2>> download_errors.log || true
+          ls -la
+          tail -20 download_errors.log || true
+      - name: Commit results back to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A tiktok_data
+          git commit -m "Add TikTok profile data and videos fetched by workflow" || echo "nothing to commit"
+          git push || true
