@@ -201,12 +201,38 @@ armamos para tu negocio." Abajo centrado, subrayado: "@tuusuario".
 4. **Exportá en 1080x1350** y verificá que el título no quede tapado por tu usuario (arriba) ni por los botones de IG (abajo).
 5. En la placa 8 reemplazá `@tuusuario` por tu usuario real antes de generar.
 
-## Caption sugerido para el post
+## Descripción (caption) para el post — versión final
 
-> El 95% de la gente que ve tu negocio hoy no te va a comprar hoy. ¿Los estás perdiendo o los estás metiendo en un embudo?
+> El 95% de las personas que ven tu negocio hoy NO te van a comprar hoy. 👇
 >
-> En este carrusel te muestro las 5 etapas para que un desconocido termine siendo cliente (y después te recomiende).
+> ¿Y qué hacés con ese 95%? La mayoría de los negocios lo deja ir. Los que venden todos los días lo meten en un embudo.
 >
-> Guardalo para tenerlo a mano y escribime "EMBUDO" si querés que lo armemos para tu negocio.
+> En este carrusel te muestro las 5 etapas para que un desconocido termine siendo cliente:
 >
-> #marketingdigital #embudodeventas #ventas #negocios #emprendedores #marcasenexpansion
+> 1️⃣ ATRAER → que te descubran
+> 2️⃣ CAPTAR → que te dejen su contacto
+> 3️⃣ NUTRIR → que confíen en vos
+> 4️⃣ VENDER → oferta clara + un solo llamado a la acción
+> 5️⃣ FIDELIZAR → que vuelvan y te recomienden
+>
+> 📌 Guardá este post para tenerlo a mano cuando armes el tuyo.
+>
+> Y si querés que lo veamos aplicado a TU negocio, escribime "EMBUDO" por mensaje directo y te digo por dónde empezar.
+>
+> #embudodeventas #marketingdigital #ventas #negocios #emprendedores #estrategiadigital #marcasenexpansion
+
+### Variante corta (si preferís menos texto)
+
+> Tu negocio no tiene un problema de ventas. Tiene un problema de embudo. 👇
+>
+> Deslizá y fijate cuál de las 5 etapas te está faltando.
+>
+> 📌 Guardalo y escribime "EMBUDO" por mensaje directo si querés armar el tuyo.
+>
+> #embudodeventas #marketingdigital #ventas #negocios #emprendedores
+
+### Tips de la descripción
+
+- La **primera línea es la única que se ve** antes del "más": tiene que ser el gancho.
+- Los hashtags siempre al final, separados del texto.
+- La palabra clave "EMBUDO" en el CTA te sirve para filtrar interesados en el mensaje directo (y si usás ManyChat o similar, para automatizar la respuesta).
