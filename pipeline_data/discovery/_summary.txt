@@ -1,31 +1,10 @@
-sabri_suby	320	
-adam_erhart	522	
-chase_chappell_tt	1204	
-wscube_tech	482	
-jason_wojo	3569	
-ct_disrupter	4456	
-ct_disrupter_tt	1313	
-barry_hott	24	
-barry_hott_tt	73	
-dara_denney_tt	503	
-luke_thorburg	260	
-luke_thorburg_tt	465	
-ravi_abuvala_tt	1466	
+garyvee_tt	8157	
+jordan_platten_tt	808	
+davie_fogarty_tt	1061	
+adam_erhart_tt	577	
+iman_gadzhi_tt	669	
+jason_wojo_tt	0	ERR
+nick_shackelford_tt	4	
 savannah_sanchez_tt	0	ERR
-depesh_mandalia_tt	0	ERR
-neil_patel_tt	1365	
-ben_heath_tt	877	
-alex_fedotoff	1825	
-alex_fedotoff_tt	639	
-curt_maly_tt	300	
-aleric_heck	1347	
-sahil_khanna	279	
-marketing_fundas	116	
-young_urban_project	458	
-damini_tripathi	141	
-redman_ecommerce	0	ERR
-baijing_chuhai	0	ERR
-search_smma_clients	40	
-search_meta_hindi_2025	40	
-search_meta_audit2	30	
-search_insta_ru	30	
+depesh_mandalia_tt	103	
+hormozi_tt	5321	
