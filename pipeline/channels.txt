@@ -1,37 +1,11 @@
-# v2 — corrections + new sources only (v1 listings already committed in pipeline_data/discovery)
-# Corrections of failed v1 handles
-sabri_suby	https://www.youtube.com/@SabriSubyOfficial/shorts
-adam_erhart	https://www.youtube.com/@Adamerhartvideo/shorts
-chase_chappell_tt	https://www.tiktok.com/@chase_chappell
-wscube_tech	https://www.youtube.com/@wscubetech/shorts
-jason_wojo	https://www.youtube.com/@JasonWojoOfficial/shorts
-# New US/EN Meta Ads specialists
-ct_disrupter	https://www.youtube.com/@CTtheDisrupter/shorts
-ct_disrupter_tt	https://www.tiktok.com/@ctthedisrupter
-barry_hott	https://www.youtube.com/@BarryHott/shorts
-barry_hott_tt	https://www.tiktok.com/@barryhott
-dara_denney_tt	https://www.tiktok.com/@daradenney
-luke_thorburg	https://www.youtube.com/@lukethorburg/shorts
-luke_thorburg_tt	https://www.tiktok.com/@lukethorburg
-ravi_abuvala_tt	https://www.tiktok.com/@theraviabuvala
+# v3 — extra TikTok profiles (agency/Meta Ads adjacent) to widen the recent pool
+garyvee_tt	https://www.tiktok.com/@garyvee
+jordan_platten_tt	https://www.tiktok.com/@jordanplatten
+davie_fogarty_tt	https://www.tiktok.com/@daviefogarty
+adam_erhart_tt	https://www.tiktok.com/@officialadamerhart
+iman_gadzhi_tt	https://www.tiktok.com/@imangadzhi
+jason_wojo_tt	https://www.tiktok.com/@thejasonwojo
+nick_shackelford_tt	https://www.tiktok.com/@iamnickshackelford
 savannah_sanchez_tt	https://www.tiktok.com/@thesocialsavannah
 depesh_mandalia_tt	https://www.tiktok.com/@depeshmandalia_official
-neil_patel_tt	https://www.tiktok.com/@neilpatel
-ben_heath_tt	https://www.tiktok.com/@benheathmarketing
-alex_fedotoff	https://www.youtube.com/@AlexFedotofff/shorts
-alex_fedotoff_tt	https://www.tiktok.com/@alexfedotoff
-curt_maly_tt	https://www.tiktok.com/@curtmaly
-aleric_heck	https://www.youtube.com/@AlericHeckYT/shorts
-# New India
-sahil_khanna	https://www.youtube.com/@IntellectualIndies/shorts
-marketing_fundas	https://www.youtube.com/channel/UCZbdK5v2VIj7qG6s7y3nDdw/shorts
-young_urban_project	https://www.youtube.com/c/youngurbanproject/shorts
-damini_tripathi	https://www.youtube.com/@daminitripathi/shorts
-# New China (cross-border FB ads)
-redman_ecommerce	https://www.youtube.com/@redman_ecommerce/shorts
-baijing_chuhai	https://www.youtube.com/channel/UChO0kV_334fde1kSmIOiiJA/shorts
-# Extra topic searches
-search_smma_clients	ytsearch40:how to get smma clients
-search_meta_hindi_2025	ytsearch40:meta ads tutorial hindi 2025
-search_meta_audit2	ytsearch30:meta ads account audit
-search_insta_ru	ytsearch30:реклама в инстаграм настройка
+hormozi_tt	https://www.tiktok.com/@ahormozi
