@@ -1,0 +1,22 @@
+{
+ "row": "042",
+ "url": "https://www.tiktok.com/@daradenney/video/7667945190090394911",
+ "status": "ok",
+ "id": "7667945190090394911",
+ "title": "This is how I automated my agency’s creative reporting using @ChatGPT...",
+ "description": "This is how I automated my agency’s creative reporting using @ChatGPT Work: What used to take me 3-4 hours per client… now only takes me 20 minutes. Finally.  1. First, we selected our data-source. We decided to do a direct connection to Meta Ads (read access only) via Meta for Developers so that it could be as hands-off as possible.  It was a littttttttle techy, but if I can do this, truly anyone can. You can also use Funnel.IO, Supermetrics, or even a Google Sheet of data if you’d prefer. 2. Then I developed a plugin skill to format the decks in the exact way that I wanted. For years I’ve had a specific structure for this that clients really enjoy.  The flow goes like this:  Overall business metrics MoM > Platform updates > Benchmarking data > Top Performing Creative Breakdown > Creative Learnings > Competitor Watch > Creative Winners from Other Brands > Next Steps  The plugin skill allows me to make this kind of deck anytime on command. 3. Built scheduled tasks for each brand. Now once a month a ChatGPT Work workflow gets triggered: first it starts by gathering the data for each brand, formatting it into the correct deck template using the plugin skill, and then it sends the deck directly in Slack to our internal team for the final touches.  Still tweaking this a bit, but really happy with how it’s turning out so far.  Tell me: have you automated your Meta Ads reporting yet?  #ChatGPTPartner #Ad",
+ "uploader": "daradenney",
+ "uploader_id": "6809444228997972997",
+ "channel": "Dara Denney",
+ "view_count": 4094,
+ "like_count": 116,
+ "comment_count": 3,
+ "repost_count": 15,
+ "duration": 99,
+ "upload_date": "20260729",
+ "webpage_url": "https://www.tiktok.com/@daradenney/video/7667945190090394911",
+ "extractor": "TikTok",
+ "transcript": "This ChatGPT workflow means that I never have to do creative reporting again, especially now that ChatGPT, Work, and Codex are all in the same place. So at the end of each month, we make a creative performance report for all of our clients. It goes over everything, like month over month, business metrics, product breakdowns, creative learnings. But it would take three to four, four hours to make per brand. So here's how I totally automated this using ChatGPT, bringing the total deck making time down to 20 minutes. First, I used GPT 5.6 in ChatGPT, and I showed it examples of our old reports and gave it more additional context for what I was trying to achieve. And there we developed a plan to build out an app in Codex. Then I built a plugin skill that would help bring the decks to life in the exact format that I wanted. And then finally, I connected Codex directly to meta ads through an API call through meta for developers so that I could get the most accurate data possible. So before I was juggling multiple sources of data and visualizations, but now it is all done through ChatGPT, Work, and Codex. We now have these as scheduled tasks for each brand, and it actually pings us directly in Slack every time one is ready for the final touches. So now each month, ChatGPT is alerted when it's time for a new report to be generated. It then references The plugin skill that I developed so that it knows which client and in which format I want the presentation to be in, and then using Code X, connects directly to meta ads to get the most accurate data. I only spend 20 to 30 minutes adding the insights that only I can add, but 90% of the busy work was completely done for me using ChatGPT. So if you're a woman in spam who wants to completely automate her meta ads reporting, be sure to download the ChatGPT desktop app.",
+ "transcript_source": "subtitles:video.eng-US.srt",
+ "n_frames": 6
+}
