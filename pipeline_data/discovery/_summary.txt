@@ -1,34 +1,31 @@
-ben_heath	633	
-nick_theriot	383	
-dara_denney	334	
-chase_chappell	1096	
-jason_wojo	61	
-sabri_suby	0	ERR
-neil_patel	1326	
-adam_erhart	0	ERR
-iman_gadzhi	0	ERR
-iman_gadzhi_shorts	2	
-jordan_platten	639	
-davie_fogarty	745	
-sabri_suby_tt	219	
-chase_chappell_tt	0	ERR
-umar_tazkeer	85	
-social_seller_academy	183	
-wscube_tech	0	ERR
-digital_azadi	233	
-sorav_jain	358	
-digital_deepak	4	
-search_meta_ads_en	60	
-search_fb_ads_audit	40	
-search_media_buyer	40	
-search_meta_ads_2025	40	
-search_ig_ads	40	
-search_fb_beginners	40	
-search_smma_results	40	
-search_meta_ads_hindi	40	
-search_meta_ads_hindi2	40	
-search_fb_ads_hindi3	30	
-search_fb_ads_cn	40	
-search_crossborder_cn	30	
-search_qianchuan_cn	30	
-search_targeting_ru	30	
+sabri_suby	320	
+adam_erhart	522	
+chase_chappell_tt	1204	
+wscube_tech	482	
+jason_wojo	3569	
+ct_disrupter	4456	
+ct_disrupter_tt	1313	
+barry_hott	24	
+barry_hott_tt	73	
+dara_denney_tt	503	
+luke_thorburg	260	
+luke_thorburg_tt	465	
+ravi_abuvala_tt	1466	
+savannah_sanchez_tt	0	ERR
+depesh_mandalia_tt	0	ERR
+neil_patel_tt	1365	
+ben_heath_tt	877	
+alex_fedotoff	1825	
+alex_fedotoff_tt	639	
+curt_maly_tt	300	
+aleric_heck	1347	
+sahil_khanna	279	
+marketing_fundas	116	
+young_urban_project	458	
+damini_tripathi	141	
+redman_ecommerce	0	ERR
+baijing_chuhai	0	ERR
+search_smma_clients	40	
+search_meta_hindi_2025	40	
+search_meta_audit2	30	
+search_insta_ru	30	
