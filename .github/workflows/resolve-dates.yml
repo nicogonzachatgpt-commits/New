@@ -1,0 +1,29 @@
+name: Resolve upload dates for candidate videos
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/latam-marketing-creators-analysis-r905bf]
+    paths: ['pipeline/date_candidates.txt']
+permissions:
+  contents: write
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install yt-dlp
+        run: pip install -U "yt-dlp[default,curl-cffi]"
+      - name: Resolve dates
+        run: python pipeline/resolve_dates.py
+      - name: Commit results back to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase || true
+          git add -A pipeline_data/dates
+          git commit -m "Add resolved upload dates for candidate videos" || echo "nothing to commit"
+          git push || true
