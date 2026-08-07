@@ -1,0 +1,22 @@
+{
+ "row": "220",
+ "url": "https://www.tiktok.com/@benheathmarketing/video/7626755185234234657",
+ "status": "ok",
+ "id": "7626755185234234657",
+ "title": "Meta Pixel VS Conversations API",
+ "description": "Meta Pixel VS Conversations API",
+ "uploader": "benheathmarketing",
+ "uploader_id": "6731607824533259270",
+ "channel": "Ben Heath",
+ "view_count": 789,
+ "like_count": 45,
+ "comment_count": 1,
+ "repost_count": 2,
+ "duration": 22,
+ "upload_date": "20260409",
+ "webpage_url": "https://www.tiktok.com/@benheathmarketing/video/7626755185234234657",
+ "extractor": "TikTok",
+ "transcript": "Meta Pixel or conversions API? Which one should I use? Definitely both. You want the Meta Pixel installed and conversions API. That's going to give you by far the most accurate tracking. Anything that helps improve the quality of data going into your ad account helps meta optimize your campaigns, which can make a big difference to your results. And it helps you as the advertiser optimize as well. So takes a bit of extra time, but definitely get both installed.",
+ "transcript_source": "subtitles:video.eng-US.srt",
+ "n_frames": 6
+}
