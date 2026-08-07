@@ -1,10 +1,12 @@
-garyvee_tt	8157	
-jordan_platten_tt	808	
-davie_fogarty_tt	1061	
-adam_erhart_tt	577	
-iman_gadzhi_tt	669	
-jason_wojo_tt	0	ERR
-nick_shackelford_tt	4	
-savannah_sanchez_tt	0	ERR
-depesh_mandalia_tt	103	
-hormozi_tt	5321	
+mr_paidsocial_tt	641	
+made_marketing_tt	496	
+beardpreneur_tt	1664	
+natalie_alaimo_tt	130	
+matt_bell_tt	447	
+domenic_iandolo_tt	1632	
+alex_billaut_tt	245	
+bitbranding_tt	430	
+maryanne_damarzo_tt	834	
+justin_lalonde_tt	1299	
+macie_reed_tt	318	
+mcd_creative_tt	237	
