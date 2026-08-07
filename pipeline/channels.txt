@@ -1,38 +1,37 @@
-# label<TAB>url — YouTube /shorts tabs, TikTok profiles, and topic searches
-# US / English-market Meta Ads & agency specialists
-ben_heath	https://www.youtube.com/@BenHeath/shorts
-nick_theriot	https://www.youtube.com/@NickTheriot/shorts
-dara_denney	https://www.youtube.com/@daradenney/shorts
-chase_chappell	https://www.youtube.com/@ChaseChappell/shorts
-jason_wojo	https://www.youtube.com/@thejasonwojo/shorts
-sabri_suby	https://www.youtube.com/@SabriSuby/shorts
-neil_patel	https://www.youtube.com/@NeilPatel/shorts
-adam_erhart	https://www.youtube.com/@AdamErhart/shorts
-iman_gadzhi	https://www.youtube.com/@ImanGadzhi/shorts
-iman_gadzhi_shorts	https://www.youtube.com/channel/UCC4FVtc8pUMg6-wSaWRcd6w
-jordan_platten	https://www.youtube.com/@JordanPlatten/shorts
-davie_fogarty	https://www.youtube.com/@DavieFogarty/shorts
-sabri_suby_tt	https://www.tiktok.com/@sabrisuby
-chase_chappell_tt	https://www.tiktok.com/@chasechappell
-# India — Meta/Facebook Ads teaching niche
-umar_tazkeer	https://www.youtube.com/@UmarTazkeer/shorts
-social_seller_academy	https://www.youtube.com/@SocialSellerAcademy/shorts
-wscube_tech	https://www.youtube.com/@wscubetechindia/shorts
-digital_azadi	https://www.youtube.com/@DigitalAzadi/shorts
-sorav_jain	https://www.youtube.com/@soravjain/shorts
-digital_deepak	https://www.youtube.com/@DigitalDeepak/shorts
-# Topic searches (flat listings include view counts where available)
-search_meta_ads_en	ytsearch60:meta ads tips
-search_fb_ads_audit	ytsearch40:facebook ads audit
-search_media_buyer	ytsearch40:media buyer facebook ads
-search_meta_ads_2025	ytsearch40:meta ads strategy 2025
-search_ig_ads	ytsearch40:instagram ads tutorial
-search_fb_beginners	ytsearch40:facebook ads for beginners
-search_smma_results	ytsearch40:smma meta ads client results
-search_meta_ads_hindi	ytsearch40:facebook ads kaise chalaye
-search_meta_ads_hindi2	ytsearch40:meta ads course hindi
-search_fb_ads_hindi3	ytsearch30:facebook ads tips hindi
-search_fb_ads_cn	ytsearch40:facebook 广告投放 教程
-search_crossborder_cn	ytsearch30:跨境电商 facebook 广告
-search_qianchuan_cn	ytsearch30:千川 投流 教程
-search_targeting_ru	ytsearch30:таргетированная реклама instagram
+# v2 — corrections + new sources only (v1 listings already committed in pipeline_data/discovery)
+# Corrections of failed v1 handles
+sabri_suby	https://www.youtube.com/@SabriSubyOfficial/shorts
+adam_erhart	https://www.youtube.com/@Adamerhartvideo/shorts
+chase_chappell_tt	https://www.tiktok.com/@chase_chappell
+wscube_tech	https://www.youtube.com/@wscubetech/shorts
+jason_wojo	https://www.youtube.com/@JasonWojoOfficial/shorts
+# New US/EN Meta Ads specialists
+ct_disrupter	https://www.youtube.com/@CTtheDisrupter/shorts
+ct_disrupter_tt	https://www.tiktok.com/@ctthedisrupter
+barry_hott	https://www.youtube.com/@BarryHott/shorts
+barry_hott_tt	https://www.tiktok.com/@barryhott
+dara_denney_tt	https://www.tiktok.com/@daradenney
+luke_thorburg	https://www.youtube.com/@lukethorburg/shorts
+luke_thorburg_tt	https://www.tiktok.com/@lukethorburg
+ravi_abuvala_tt	https://www.tiktok.com/@theraviabuvala
+savannah_sanchez_tt	https://www.tiktok.com/@thesocialsavannah
+depesh_mandalia_tt	https://www.tiktok.com/@depeshmandalia_official
+neil_patel_tt	https://www.tiktok.com/@neilpatel
+ben_heath_tt	https://www.tiktok.com/@benheathmarketing
+alex_fedotoff	https://www.youtube.com/@AlexFedotofff/shorts
+alex_fedotoff_tt	https://www.tiktok.com/@alexfedotoff
+curt_maly_tt	https://www.tiktok.com/@curtmaly
+aleric_heck	https://www.youtube.com/@AlericHeckYT/shorts
+# New India
+sahil_khanna	https://www.youtube.com/@IntellectualIndies/shorts
+marketing_fundas	https://www.youtube.com/channel/UCZbdK5v2VIj7qG6s7y3nDdw/shorts
+young_urban_project	https://www.youtube.com/c/youngurbanproject/shorts
+damini_tripathi	https://www.youtube.com/@daminitripathi/shorts
+# New China (cross-border FB ads)
+redman_ecommerce	https://www.youtube.com/@redman_ecommerce/shorts
+baijing_chuhai	https://www.youtube.com/channel/UChO0kV_334fde1kSmIOiiJA/shorts
+# Extra topic searches
+search_smma_clients	ytsearch40:how to get smma clients
+search_meta_hindi_2025	ytsearch40:meta ads tutorial hindi 2025
+search_meta_audit2	ytsearch30:meta ads account audit
+search_insta_ru	ytsearch30:реклама в инстаграм настройка
