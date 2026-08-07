@@ -1,0 +1,22 @@
+{
+ "row": "401",
+ "url": "https://www.tiktok.com/@beardpreneur/video/7640212666803342606",
+ "status": "ok",
+ "id": "7640212666803342606",
+ "title": "Most people run Claude on default and wonder why it sounds generic. T...",
+ "description": "Most people run Claude on default and wonder why it sounds generic. Try /caveman to cut 75% of the fluff, /ultrathink for deeper reasoning, and /ghost to strip every AI tell. Stack them per task. #Claude #ClaudeCode #ClaudeCowork",
+ "uploader": "beardpreneur",
+ "uploader_id": "6761271399930184709",
+ "channel": "Mitch | Paid Ads | E-Commerce",
+ "view_count": 87100,
+ "like_count": 4091,
+ "comment_count": 62,
+ "repost_count": 1670,
+ "duration": 69,
+ "upload_date": "20260515",
+ "webpage_url": "https://www.tiktok.com/@beardpreneur/video/7640212666803342606",
+ "extractor": "TikTok",
+ "transcript": "There are 5 Claude commands that almost nobody uses and they change the model stack them per task. That's where the real leverage is. Most people are running Claude on default settings and wondering why it sounds generic and crappy. The model has a half a dozen behavioral switches built into it already. They just look like terminal commands. Nobody even talks about them. So here are five worth memorizing. Slash caveman. It's an open source add on that strips around 75% of response tokens by cutting the fluff. Think of literally a caveman talking Ultra think. You drop it in anywhere in a prompt and clawd reasons 10 times deeper before answering. Slash ghost strips all of the AI tells and tricks from your output. No, here's what I think. No. In conclusion, no preamble, no m dashes. You just get good shipped stuff. Slash deepthink forces layered reasoning before any output. It's slower but dramatically higher quality on complex questions. And by the way, drop it into a prompt while Claud is already working on something and it slips a side request into the current run without breaking the existing job. That's 75% of your token Bill gone on the same prompts by just adding slash caveman first.",
+ "transcript_source": "subtitles:video.eng-US.srt",
+ "n_frames": 6
+}

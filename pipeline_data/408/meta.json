@@ -1,0 +1,22 @@
+{
+ "row": "408",
+ "url": "https://www.tiktok.com/@mr.paidsocial/video/7632440508106820878",
+ "status": "ok",
+ "id": "7632440508106820878",
+ "title": "This feels like cheating 😅  @Airtable #AirtablePartner",
+ "description": "This feels like cheating 😅  @Airtable #AirtablePartner",
+ "uploader": "mr.paidsocial",
+ "uploader_id": "7277651894217032746",
+ "channel": "Caleb | Ads | Ai | Automation",
+ "view_count": 19200,
+ "like_count": 840,
+ "comment_count": 153,
+ "repost_count": 321,
+ "duration": 134,
+ "upload_date": "20260424",
+ "webpage_url": "https://www.tiktok.com/@mr.paidsocial/video/7632440508106820878",
+ "extractor": "TikTok",
+ "transcript": "I just built a cloud code agent that scrapes all of my competitors ads and throws them into Airtable, complete with the competitor's name, Facebook page, page ID, and all the creative that they're running. It even shows you all the ad copy that they're running and all the landing pages that they're running. And now I can grab an ad that I like, pop it over to this ad clone tool, upload that ad here, select my product, select my brand. And now Airtable's AI Agent columns will generate brand new image ads for me. And now I have that original image ad repurposed for my own product with my brand. This system completely streamlines the competitive analysis system repurpose of ads. And I'm gonna show you how to set it up for yourself right now. At the end of this video, I'm gonna show you exactly where you can go to get the link to set all of this up. So make sure you watch it to the end. The first step is to go to this Git Hub repo and clone it onto your Cloud Code. To do this, you're gonna Open Cloud Code on your desktop, then simply paste in the URL and ask Cloud Code to help you set it all up. You don't need to know anything more than that. Now, Cloud Code handles all the setup. It clones the repo onto your machine and helps you get all the settings correct. It'll give You this URL to click on, which will allow you to copy this airtable template into your workspace. Now simply just copy that App ID and give it to code. you need to grab two super simple API keys that make everything work. The first is this meta API key. After you click on this URL, it's gonna take you to the meta Graph API. This is where you can generate and copy your API key and give it to clock code. Next you'll click on this URL and it'll take you exactly where you can go an airtable. To get your own API key, just simply click Create Token, name it whatever you want, and give it the appropriate scopes. This is where this gets really fun. Back in Claude Code, you're gonna say something like, find me 30 competitors in my industry and identify the Facebook pages they're using to run ads. And I'm saying, here's my offer so that you can better understand what my competitors look like. And I'm giving it a link to my school community. Alright, so now it's scraping my landing page to help identify what types of competitors to look for. Also, if you already had a list of all your competitors, you could just give that to Cloud Code. This is crazy. It just found me 30 of my competitors Facebook pages. I'm gonna ask it to pull 20 ads from each page and there they all are in my Airtable ready for me to repurpose and learn from. If you want me to DM you the link to get that repo to copy into your Claude code, just comment Claude spy and I'll send it straight to you.",
+ "transcript_source": "subtitles:video.eng-US.srt",
+ "n_frames": 6
+}

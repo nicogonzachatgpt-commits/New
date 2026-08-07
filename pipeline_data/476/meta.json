@@ -1,0 +1,23 @@
+{
+ "row": "476",
+ "url": "https://www.tiktok.com/@justnlalonde/video/7644680332192533778",
+ "status": "ok",
+ "id": "7644680332192533778",
+ "title": "This is how you let Claude manage your Facebook ad account.  #justinl...",
+ "description": "This is how you let Claude manage your Facebook ad account.  #justinlalonde ",
+ "uploader": "justnlalonde",
+ "uploader_id": "6712456247154639878",
+ "channel": "Justin Lalonde",
+ "view_count": 260,
+ "like_count": 14,
+ "comment_count": 0,
+ "repost_count": 4,
+ "duration": 121,
+ "upload_date": "20260527",
+ "webpage_url": "https://www.tiktok.com/@justnlalonde/video/7644680332192533778",
+ "extractor": "TikTok",
+ "whisper_language": "en",
+ "transcript": "I recently showed on the channel how to connect Claude to your Meta's ad account using their mcp. Now in this video, I want to show you exactly what you can do with it in different use cases of this new mcp. Now one of the first forms I want to share with you is the following, which is give me a 70 summary across all my active campaigns flag anything spending over x with row as below why you can change that base on the account type. So in this case, what I'll do is I'll specifically go after this campaign. So I'm just going to copy this campaign's name and I'll say flag anything spending over $150 with cost per result, I'll say above one third in the this campaign. And here's what it gave me is like, Okay, cool. I looked into every single ad account or ad campaigns that you have inside of this ad account for active campaigns, this amount of spend here's the overall results per campaign. It was like, look, there's one ad set that actually clears both thresholds right here, it spent $144, which is actually close to my 150 not sure why I brought it up but nonetheless close enough cost per result is 130 or more. There's this one which has one result at 144. So this is the only outlier you have right here. Now what I could do from there is I could just say, Hey, turn off DCT 70 J, which has already been turned off. Now the next prompt I just gave this clot at threaded that I'm talking with is show me ads that that have hit my CP target of so $100 for seven consecutive days inside of my team schedules campaign and recommend me which ones to scale and buy how much and it was like, Well, you actually haven't hit that yet. Nonetheless, it gave me now a 30 day cost per result analysis right here. So went a little further back to give me which ad sets have actually performed the best in there. So like how many days have they had conversions in this 30 day cycle. So right here was like if I was you DCT 64 J, I would scale it up DCT 32 is going to be the second one I would scale up the most right here. Then DCT 70 DCT 24 and then DCT 84 right here.",
+ "transcript_source": "whisper-small:en",
+ "n_frames": 6
+}

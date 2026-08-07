@@ -1,0 +1,22 @@
+{
+ "row": "429",
+ "url": "https://www.tiktok.com/@officialmattbell/video/7650235356842986775",
+ "status": "ok",
+ "id": "7650235356842986775",
+ "title": "How I use Claude with Meta #metaads #facebookads #fbads ",
+ "description": "How I use Claude with Meta #metaads #facebookads #fbads ",
+ "uploader": "officialmattbell",
+ "uploader_id": "7077671657204499461",
+ "channel": "Matt Bell",
+ "view_count": 3692,
+ "like_count": 119,
+ "comment_count": 5,
+ "repost_count": 18,
+ "duration": 131,
+ "upload_date": "20260611",
+ "webpage_url": "https://www.tiktok.com/@officialmattbell/video/7650235356842986775",
+ "extractor": "TikTok",
+ "transcript": "I've been using Claude a lot to help analyse the paid ad campaigns that I'm running recently and it's become extremely valuable because what I'm able to do is pull lots of different reports from different channels and then feed it into Claude, give it context and ask it the right questions which then helps me drive the campaigns and the channels in the right direction. So here for example are screenshots of a chat that I have done with Claude for a brand that have struggled over time with the conversion rate that's coming down and they have affiliates that are sending a bit more traffic than they should be and that is impacting the meta ad campaigns and so we're trying to figure out why is this happening, what do we need to cut out and because these guys are not using anything like Triple L or high rise we don't actually have anything with attribution models and with the overlap so what I'm doing here is I'm going into GA four and I'm exporting a CSV file that shows the performance of traffic by UTM campaign and by UTM source and then I'm feeding information about meta and I'm exporting different tables from meta so on the campaign level, on the ads level, even some the ad creative and we're exporting metrics like cost per click, click through CPM's I'm pulling out reports like has the CPM gone up or down over the past 12 months and So when you start getting all this information, it can be a little bit difficult to put together a solid analysis that explains what is or isn't happening. And so this is where Claude comes in because you can feed this into Claude. Then once it's built up that context, you can start asking it questions to try and figure out what's going on. And as you can see, Claude is really good at actually visualizing this data over time. So we can see here, for example, what the convergence over time look like with Google for this specific campaign we're running. We can compare it to Facebook and we can do a bunch of other stuff. And so this is the beauty of using AI in media buying. I don't get AI to actually run any of the campaigns or set them up, but I am using this now to analyse all of this data. And it's getting to a point now where at the end of each week, I'm gonna start feeding specific reporting into Claude that then gives me a summary of what is going on.",
+ "transcript_source": "subtitles:video.eng-US.srt",
+ "n_frames": 6
+}

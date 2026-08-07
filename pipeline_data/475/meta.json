@@ -1,0 +1,23 @@
+{
+ "row": "475",
+ "url": "https://www.tiktok.com/@justnlalonde/video/7642454739313102098",
+ "status": "ok",
+ "id": "7642454739313102098",
+ "title": "Facebook is banning ad accounts because of AI? #justinlalonde ",
+ "description": "Facebook is banning ad accounts because of AI? #justinlalonde ",
+ "uploader": "justnlalonde",
+ "uploader_id": "6712456247154639878",
+ "channel": "Justin Lalonde",
+ "view_count": 261,
+ "like_count": 11,
+ "comment_count": 0,
+ "repost_count": 2,
+ "duration": 100,
+ "upload_date": "20260521",
+ "webpage_url": "https://www.tiktok.com/@justnlalonde/video/7642454739313102098",
+ "extractor": "TikTok",
+ "whisper_language": "en",
+ "transcript": "There have been many reports in the space of Facebook profiles getting completely nuked from connecting an mcp to their ad accounts. Now that was before meta has now officially released their own mcp server, allowing you to safely connect your ad accounts with tools like claude. What you're going to do is you're going to download claude desktop. Then you're going to head over to bottom left corner and click on settings. Then you're going to go to connectors. From there you're going to click on add a custom connector. You're going to call this meta ads right here. Now this is meta's only official mcp. Okay so once you have that in you can just go ahead here and click on add. As you can see when added you'll see facebook's icon and you'll now have a button that says connect. So we're going to click on that and it's then going to open up your facebook profile. It's going to ask you know whether you're the right person. You go yes. Now it's going to ask often to all current future businesses or often to current businesses only. I'll just go often to all current and future for the sake of this video. Then you're going to head on continue which we're going to go ahead and hit save right here. Now we are hit with a successful screen and there you go. We have our meta ads configurator. Form a reporting and question standpoint. In my experience it's actually very solid of an mcp. Here's another thing you can do with this mcp. So as an example I said hey I want you to increase the ad spend of the ad set dcd32 by $2 a day extra given this is an adio campaign. Then it said quick confirmation. This ad set right here the budget is currently 1875 a day. I'm going to put it to 2075 a day. Ad account is this one and ad set ID is this one. Please confirm. I was like yeah it was like good done dcd32 is now 2075 a day.",
+ "transcript_source": "whisper-small:en",
+ "n_frames": 6
+}
