@@ -1,0 +1,38 @@
+# label<TAB>url — YouTube /shorts tabs, TikTok profiles, and topic searches
+# US / English-market Meta Ads & agency specialists
+ben_heath	https://www.youtube.com/@BenHeath/shorts
+nick_theriot	https://www.youtube.com/@NickTheriot/shorts
+dara_denney	https://www.youtube.com/@daradenney/shorts
+chase_chappell	https://www.youtube.com/@ChaseChappell/shorts
+jason_wojo	https://www.youtube.com/@thejasonwojo/shorts
+sabri_suby	https://www.youtube.com/@SabriSuby/shorts
+neil_patel	https://www.youtube.com/@NeilPatel/shorts
+adam_erhart	https://www.youtube.com/@AdamErhart/shorts
+iman_gadzhi	https://www.youtube.com/@ImanGadzhi/shorts
+iman_gadzhi_shorts	https://www.youtube.com/channel/UCC4FVtc8pUMg6-wSaWRcd6w
+jordan_platten	https://www.youtube.com/@JordanPlatten/shorts
+davie_fogarty	https://www.youtube.com/@DavieFogarty/shorts
+sabri_suby_tt	https://www.tiktok.com/@sabrisuby
+chase_chappell_tt	https://www.tiktok.com/@chasechappell
+# India — Meta/Facebook Ads teaching niche
+umar_tazkeer	https://www.youtube.com/@UmarTazkeer/shorts
+social_seller_academy	https://www.youtube.com/@SocialSellerAcademy/shorts
+wscube_tech	https://www.youtube.com/@wscubetechindia/shorts
+digital_azadi	https://www.youtube.com/@DigitalAzadi/shorts
+sorav_jain	https://www.youtube.com/@soravjain/shorts
+digital_deepak	https://www.youtube.com/@DigitalDeepak/shorts
+# Topic searches (flat listings include view counts where available)
+search_meta_ads_en	ytsearch60:meta ads tips
+search_fb_ads_audit	ytsearch40:facebook ads audit
+search_media_buyer	ytsearch40:media buyer facebook ads
+search_meta_ads_2025	ytsearch40:meta ads strategy 2025
+search_ig_ads	ytsearch40:instagram ads tutorial
+search_fb_beginners	ytsearch40:facebook ads for beginners
+search_smma_results	ytsearch40:smma meta ads client results
+search_meta_ads_hindi	ytsearch40:facebook ads kaise chalaye
+search_meta_ads_hindi2	ytsearch40:meta ads course hindi
+search_fb_ads_hindi3	ytsearch30:facebook ads tips hindi
+search_fb_ads_cn	ytsearch40:facebook 广告投放 教程
+search_crossborder_cn	ytsearch30:跨境电商 facebook 广告
+search_qianchuan_cn	ytsearch30:千川 投流 教程
+search_targeting_ru	ytsearch30:таргетированная реклама instagram
