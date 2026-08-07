@@ -1,11 +1,13 @@
-# v3 — extra TikTok profiles (agency/Meta Ads adjacent) to widen the recent pool
-garyvee_tt	https://www.tiktok.com/@garyvee
-jordan_platten_tt	https://www.tiktok.com/@jordanplatten
-davie_fogarty_tt	https://www.tiktok.com/@daviefogarty
-adam_erhart_tt	https://www.tiktok.com/@officialadamerhart
-iman_gadzhi_tt	https://www.tiktok.com/@imangadzhi
-jason_wojo_tt	https://www.tiktok.com/@thejasonwojo
-nick_shackelford_tt	https://www.tiktok.com/@iamnickshackelford
-savannah_sanchez_tt	https://www.tiktok.com/@thesocialsavannah
-depesh_mandalia_tt	https://www.tiktok.com/@depeshmandalia_official
-hormozi_tt	https://www.tiktok.com/@ahormozi
+# v4 — new Meta-Ads-specific TikTok accounts from fresh discovery
+mr_paidsocial_tt	https://www.tiktok.com/@mr.paidsocial
+made_marketing_tt	https://www.tiktok.com/@madecreativeco
+beardpreneur_tt	https://www.tiktok.com/@beardpreneur
+natalie_alaimo_tt	https://www.tiktok.com/@nataliealaimo
+matt_bell_tt	https://www.tiktok.com/@officialmattbell
+domenic_iandolo_tt	https://www.tiktok.com/@domeniciandolo
+alex_billaut_tt	https://www.tiktok.com/@alexbillaut
+bitbranding_tt	https://www.tiktok.com/@bitbranding
+maryanne_damarzo_tt	https://www.tiktok.com/@maryannedamarzo
+justin_lalonde_tt	https://www.tiktok.com/@justnlalonde
+macie_reed_tt	https://www.tiktok.com/@maciereedmarketing
+mcd_creative_tt	https://www.tiktok.com/@mcd_creative
