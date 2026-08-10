@@ -1,0 +1,1251 @@
+<title>21 guiones para captar consignaciones</title>
+<style>
+  :root {
+    --bg: #E7E9E5;
+    --surface: #FAFAF8;
+    --surface-2: #EFF1ED;
+    --ink: #15191B;
+    --muted: #5C6462;
+    --line: #CFD4CF;
+    --line-strong: #B4BBB5;
+    --accent: #E5B209;
+    --accent-ink: #1A1405;
+    --alert: #97362A;
+    --alert-bg: #F3E3E0;
+
+    --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --font-say: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --font-tech: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+    --w: 60rem;
+    --step: 1.25rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131618;
+      --surface: #1B1F21;
+      --surface-2: #212628;
+      --ink: #E6E9E4;
+      --muted: #949C99;
+      --line: #2A2F31;
+      --line-strong: #3B4245;
+      --accent: #F2C222;
+      --accent-ink: #171200;
+      --alert: #E08674;
+      --alert-bg: #2A1D1A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #131618;
+    --surface: #1B1F21;
+    --surface-2: #212628;
+    --ink: #E6E9E4;
+    --muted: #949C99;
+    --line: #2A2F31;
+    --line-strong: #3B4245;
+    --accent: #F2C222;
+    --accent-ink: #171200;
+    --alert: #E08674;
+    --alert-bg: #2A1D1A;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+  }
+
+  .wrap {
+    max-width: var(--w);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  a { color: inherit; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-tech);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 6vw, 3.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.033em;
+    font-weight: 800;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 mark {
+    background: var(--accent);
+    color: var(--accent-ink);
+    padding: 0 0.14em;
+    border-radius: 1px;
+  }
+
+  .standfirst {
+    font-family: var(--font-say);
+    font-size: 1.18rem;
+    line-height: 1.5;
+    max-width: 34em;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  .meta-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.4rem;
+    font-family: var(--font-tech);
+    font-size: 0.74rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 0.7rem 0;
+  }
+
+  /* ---------- generic blocks ---------- */
+
+  section { display: flex; flex-direction: column; gap: 1.1rem; }
+
+  h2 {
+    font-size: 0.78rem;
+    font-family: var(--font-tech);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0;
+    padding-bottom: 0.55rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  p { margin: 0; max-width: 40em; }
+
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .note.warn { border-left-color: var(--alert); background: var(--alert-bg); }
+
+  .note h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .note p, .note li { font-size: 0.94rem; color: var(--ink); }
+
+  ul.tight { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+
+  /* ---------- rules table ---------- */
+
+  .rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .rule {
+    background: var(--surface);
+    padding: 1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .rule .k {
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .rule .v { font-size: 0.95rem; font-weight: 600; letter-spacing: -0.01em; }
+  .rule .d { font-size: 0.87rem; color: var(--muted); }
+
+  /* ---------- index ---------- */
+
+  .index {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .index a {
+    background: var(--surface);
+    text-decoration: none;
+    padding: 0.7rem 0.9rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: baseline;
+    transition: background 0.12s ease;
+  }
+
+  .index a:hover { background: var(--surface-2); }
+
+  .index .n {
+    font-family: var(--font-tech);
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    min-width: 1.6em;
+  }
+
+  .index .t { font-size: 0.92rem; letter-spacing: -0.01em; }
+
+  /* ---------- ficha ---------- */
+
+  .fichas { display: flex; flex-direction: column; gap: 2rem; }
+
+  .ficha {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    scroll-margin-top: 1.5rem;
+  }
+
+  .ficha-head {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .num {
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-family: var(--font-ui);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.4rem;
+    flex-shrink: 0;
+  }
+
+  .ficha-title {
+    padding: 0.85rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+  }
+
+  .ficha-title h3 {
+    margin: 0;
+    font-size: 1.14rem;
+    font-weight: 750;
+    letter-spacing: -0.022em;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  .kicker {
+    font-family: var(--font-tech);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .ficha-body {
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+
+  .ref {
+    font-family: var(--font-tech);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--muted);
+    background: var(--surface-2);
+    padding: 0.7rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    overflow-x: auto;
+  }
+
+  .ref b { color: var(--ink); font-weight: 600; }
+  .ref .views { background: var(--accent); color: var(--accent-ink); padding: 0 0.35em; }
+  .ref a { word-break: break-all; }
+
+  .why { font-size: 0.93rem; color: var(--muted); max-width: 44em; }
+  .why b { color: var(--ink); font-weight: 600; }
+
+  .beats { display: flex; flex-direction: column; }
+
+  .beat {
+    display: grid;
+    grid-template-columns: 5.2rem 1fr;
+    gap: 0 0.9rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--line);
+    align-items: start;
+  }
+
+  .beat:first-child { border-top: 1px solid var(--line-strong); }
+
+  .tc {
+    font-family: var(--font-tech);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    padding-top: 0.28rem;
+    text-transform: uppercase;
+  }
+
+  .say {
+    font-family: var(--font-say);
+    font-size: 1.03rem;
+    line-height: 1.45;
+  }
+
+  .say em { font-style: italic; color: var(--muted); font-family: var(--font-ui); font-size: 0.86rem; }
+
+  .do {
+    font-family: var(--font-tech);
+    font-size: 0.79rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .onscreen {
+    display: inline-block;
+    font-family: var(--font-tech);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border: 1px dashed var(--line-strong);
+    padding: 0.12rem 0.45rem;
+    color: var(--ink);
+  }
+
+  .prod {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    border-top: 1px solid var(--line);
+    padding-top: 0.85rem;
+  }
+
+  .chip {
+    font-family: var(--font-tech);
+    font-size: 0.71rem;
+    letter-spacing: 0.04em;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    padding: 0.2rem 0.5rem;
+    color: var(--muted);
+  }
+
+  .chip b { color: var(--ink); font-weight: 600; }
+
+  .risk {
+    font-family: var(--font-tech);
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--alert);
+    border-left: 2px solid var(--alert);
+    padding-left: 0.7rem;
+  }
+
+  /* ---------- closing ---------- */
+
+  .cal {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .cal-wrap { overflow-x: auto; border: 1px solid var(--line); }
+
+  .cal th, .cal td {
+    text-align: left;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  .cal th {
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface-2);
+  }
+
+  .cal td { background: var(--surface); }
+  .cal td:first-child { font-family: var(--font-tech); font-variant-numeric: tabular-nums; color: var(--muted); }
+  .cal tr:last-child td { border-bottom: none; }
+
+  footer {
+    font-family: var(--font-tech);
+    font-size: 0.74rem;
+    line-height: 1.7;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 1.2rem;
+  }
+
+  @media (max-width: 34rem) {
+    body { font-size: 16px; padding: 0 0.9rem 4rem; }
+    .beat { grid-template-columns: 1fr; gap: 0.15rem; }
+    .tc { padding-top: 0; }
+    .masthead { padding-top: 2.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">Banco de guiones · Captación de consignaciones</div>
+    <h1>21 formatos ya validados, reescritos para <mark>que te dejen el auto</mark></h1>
+    <p class="standfirst">Cada ficha parte de un video real que funcionó afuera, explica por qué funcionó, y lo reescribe como guión argentino listo para grabar. El objetivo de los 21 es el mismo: que el dueño de un auto parado te lo traiga.</p>
+    <div class="meta-strip">
+      <span>Reels + TikTok vertical</span>
+      <span>20–45 seg</span>
+      <span>Dueño + escenas actuadas</span>
+      <span>Todos los segmentos</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Antes de grabar</h2>
+    <div class="rules">
+      <div class="rule">
+        <span class="k">A quién le hablás</span>
+        <span class="v">Al que tiene el auto, no al que lo compra</span>
+        <span class="d">Nada de "financiación en 12 cuotas". Todo apunta a: tenés un auto parado y vender solo es un dolor de cabeza.</span>
+      </div>
+      <div class="rule">
+        <span class="k">Los primeros 3 segundos</span>
+        <span class="v">Sin saludo, sin logo, sin "hola qué tal"</span>
+        <span class="d">Se arranca en el medio de la frase más fuerte del video. El nombre de la concesionaria aparece al final, no al principio.</span>
+      </div>
+      <div class="rule">
+        <span class="k">CTA fijo</span>
+        <span class="v">Uno solo, siempre el mismo</span>
+        <span class="d">"Mandame la foto del auto por WhatsApp y te digo en el día en cuánto se publica." Cero fricción, cero formulario.</span>
+      </div>
+      <div class="rule">
+        <span class="k">Cadencia</span>
+        <span class="v">4 por semana, 3 semanas de rodaje</span>
+        <span class="d">Se graban en tandas. 21 guiones ≈ 5 semanas de publicación. Un día de rodaje saca 6 o 7.</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <h3>Completá estos datos antes de grabar</h3>
+      <p>Los guiones tienen corchetes. Reemplazalos una vez y quedan fijos para los 21:</p>
+      <ul class="tight">
+        <li><b>[CONCESIONARIA]</b> — nombre tal cual lo decís en voz alta.</li>
+        <li><b>[ZONA]</b> — barrio o partido. Cuanto más chico, mejor convierte.</li>
+        <li><b>[X%]</b> — comisión de consignación.</li>
+        <li><b>[N]</b> — días promedio reales de venta. Si no lo sabés, medilo un mes antes de decirlo a cámara.</li>
+        <li><b>[WHATSAPP]</b> — el número, en pantalla, grande, los últimos 3 segundos.</li>
+      </ul>
+    </div>
+
+    <div class="note warn">
+      <h3>Tres cosas que te pueden salir caras</h3>
+      <ul class="tight">
+        <li><b>No uses clips ajenos.</b> Varios de estos formatos nacieron cortando videos virales de terceros. Recreá la escena vos: mismo chiste, material propio. El audio/trend de la plataforma sí se puede usar.</li>
+        <li><b>Cliente en cámara, autorización por escrito.</b> Un WhatsApp donde te dice "sí, podés usarlo" alcanza y te cubre.</li>
+        <li><b>Nunca un chiste sobre venderle caro a alguien.</b> Un vendedor en EEUU publicó en broma que le vendió un auto a una madre soltera USD 10.000 arriba de lista: lo echaron y le hundieron las reseñas a la concesionaria. En este rubro el humor va sobre vos mismo, nunca sobre el cliente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Los 21</h2>
+    <nav class="index">
+      <a href="#g1"><span class="n">01</span><span class="t">La Concesionaria (sitcom)</span></a>
+      <a href="#g2"><span class="n">02</span><span class="t">Final alternativo</span></a>
+      <a href="#g3"><span class="n">03</span><span class="t">Los 5 compradores de Marketplace</span></a>
+      <a href="#g4"><span class="n">04</span><span class="t">El que te regatea (roleplay)</span></a>
+      <a href="#g5"><span class="n">05</span><span class="t">3 cosas que nunca hagas</span></a>
+      <a href="#g6"><span class="n">06</span><span class="t">Se lo llevaron a probar</span></a>
+      <a href="#g7"><span class="n">07</span><span class="t">El AirTag</span></a>
+      <a href="#g8"><span class="n">08</span><span class="t">Vender siendo mujer</span></a>
+      <a href="#g9"><span class="n">09</span><span class="t">El comprobante trucho</span></a>
+      <a href="#g10"><span class="n">10</span><span class="t">¿Cuánto creés que vale?</span></a>
+      <a href="#g11"><span class="n">11</span><span class="t">Ocho meses publicado</span></a>
+      <a href="#g12"><span class="n">12</span><span class="t">Antes / después</span></a>
+      <a href="#g13"><span class="n">13</span><span class="t">Acá estaba una Amarok</span></a>
+      <a href="#g14"><span class="n">14</span><span class="t">La pantalla del homebanking</span></a>
+      <a href="#g15"><span class="n">15</span><span class="t">Qué pasa mientras está acá</span></a>
+      <a href="#g16"><span class="n">16</span><span class="t">Tu auto, tres caminos</span></a>
+      <a href="#g17"><span class="n">17</span><span class="t">Los primeros 40 segundos</span></a>
+      <a href="#g18"><span class="n">18</span><span class="t">El llamado de las nueve</span></a>
+      <a href="#g19"><span class="n">19</span><span class="t">La marca de la casa</span></a>
+      <a href="#g20"><span class="n">20</span><span class="t">El auto imán</span></a>
+      <a href="#g21"><span class="n">21</span><span class="t">"Es un curro"</span></a>
+    </nav>
+  </section>
+
+  <section class="fichas">
+
+    <!-- 01 -->
+    <article class="ficha" id="g1">
+      <div class="ficha-head">
+        <div class="num">01</div>
+        <div class="ficha-title">
+          <span class="kicker">Serie · Personajes</span>
+          <h3>La Concesionaria</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> Mohawk Chevrolet — "The Dealership", parodia de <i>The Office</i> · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">+10M views</span> acumuladas en la serie · un episodio +3M · 144k seguidores</span>
+          <span><a href="https://www.tiktok.com/@mohawkchevrolet/video/7338194341564845355">tiktok.com/@mohawkchevrolet</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> no vende autos, vende personajes. La gente vuelve por la gente, y de paso se entera de qué hacés. Es el formato con mayor retención de todo el rubro y el único que genera <b>público recurrente</b> en vez de views sueltas. Escribilo como capítulos numerados.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:04</span><span class="say">— Hoy entró un Corolla en consignación. Segundo de la semana. <em>Dueño mirando a cámara, estilo documental, en la oficina.</em></span></div>
+          <div class="beat"><span class="tc">0:04–0:12</span><span class="say">— Yo lo vendo solo, no necesito a nadie.<br>— Lo tenés publicado hace cuatro meses. <em>Corte: vendedor con un cliente actuado en el salón.</em></span></div>
+          <div class="beat"><span class="tc">0:12–0:20</span><span class="say">— Tres.<br>— Cuatro.<br>— ...meses.<br>— Ah.</span></div>
+          <div class="beat"><span class="tc">0:20–0:27</span><span class="say">— Lo trajo el martes. <em>Dueño a cámara, plano fijo, media sonrisa. Zoom brusco.</em></span></div>
+          <div class="beat"><span class="tc">Cierre</span><span class="do"><span class="onscreen">Cap. 1 — La Concesionaria</span> <span class="onscreen">Dejá tu auto: [WHATSAPP]</span></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño + vendedor + 1 actor</span>
+          <span class="chip"><b>Dónde:</b> oficina y salón</span>
+          <span class="chip"><b>Cámara:</b> fija en trípode, zoom manual brusco al remate</span>
+          <span class="chip"><b>Audio:</b> sin música</span>
+          <span class="chip"><b>Dura:</b> 27s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="ficha" id="g2">
+      <div class="ficha-head">
+        <div class="num">02</div>
+        <div class="ficha-title">
+          <span class="kicker">Humor · Corte seco</span>
+          <h3>Final alternativo</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> Central Houston Nissan · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">~4M views en 2 días</span> en una pieza · 10M+ en otra · millones acumulados con este formato</span>
+          <span><a href="https://www.autonews.com/marketing/central-houston-nissan-remakes-tiktok-memes-viral-ads/">autonews.com — cobertura del caso</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> la concesionaria se mete adentro de un momento que la gente ya está viendo y le pone otro final filmado en el salón. El espectador viene por el meme y se queda con la marca. Ojo: <b>ellos usaban clips ajenos y vos no deberías</b> — recreá la escena con tu gente.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="do">Escena recreada: alguien discutiendo por teléfono en la vereda, al lado de un auto con cartel de VENDO en la luneta. Grabado por vos, actuado.</span></div>
+          <div class="beat"><span class="tc">0:06–0:07</span><span class="do">CORTE SECO. Mismo encuadre, otra locación: el salón.</span></div>
+          <div class="beat"><span class="tc">0:07–0:12</span><span class="say">— ¿Otra vez un curioso que te hace perder el sábado? <em>Dueño, plano frontal, extendiendo la mano.</em></span></div>
+          <div class="beat"><span class="tc">0:12–0:22</span><span class="say">— Dejámelo. Yo lo publico, lo muestro, lo negocio y te transfiero. Vos no atendés a nadie.</span></div>
+          <div class="beat"><span class="tc">Cierre</span><span class="do"><span class="onscreen">Tu auto publicado hace 3 meses ≠ tu auto en venta</span></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño + 1 actor</span>
+          <span class="chip"><b>Clave:</b> el corte cae justo en el beat del audio</span>
+          <span class="chip"><b>Audio:</b> trend de la plataforma</span>
+          <span class="chip"><b>Dura:</b> 22s</span>
+        </div>
+        <p class="risk">No descargues ni recortes videos de otras cuentas. Recreá la situación. El chiste es el mismo y el material es tuyo.</p>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="ficha" id="g3">
+      <div class="ficha-head">
+        <div class="num">03</div>
+        <div class="ficha-title">
+          <span class="kicker">Sketch · Personajes múltiples</span>
+          <h3>Los 5 compradores de Marketplace</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> formato "types of buyers" — base del contenido de Central Houston Nissan y decenas de cuentas de vendedores</span>
+          <span><b>Alcance:</b> <span class="views">millones acumulados</span> · es el formato de sketch más replicado del rubro automotor</span>
+          <span><a href="https://www.cbtnews.com/how-car-dealers-are-leveraging-tiktok-to-drive-sales-8-tips-for-success">cbtnews.com — el hook manda</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> reconocimiento puro. Cualquiera que alguna vez publicó algo en Marketplace vivió los cinco. Se comparte por WhatsApp con un "sos vos". Es el guión con más chance de salir del círculo de tus seguidores.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:04</span><span class="say">— Los cinco que te van a escribir cuando publiques tu auto. <em>Dueño interpreta a los cinco, cambiando gorra o campera en cada corte.</em></span></div>
+          <div class="beat"><span class="tc">0:04–0:09</span><span class="say">— ¿Último precio? <em>Sin haber visto ni una foto.</em></span></div>
+          <div class="beat"><span class="tc">0:09–0:14</span><span class="say">— ¿Recibís permuta? Tengo una moto y un terreno en Chascomús.</span></div>
+          <div class="beat"><span class="tc">0:14–0:19</span><span class="say">— Te doy la mitad ahora y la otra mitad te la voy pagando.</span></div>
+          <div class="beat"><span class="tc">0:19–0:24</span><span class="say">— ¿No te lo podés acercar vos? <em>Vive a 80 kilómetros.</em></span></div>
+          <div class="beat"><span class="tc">0:24–0:29</span><span class="say">— Hola, ¿sigue disponible? <em>Silencio. Visto.</em></span></div>
+          <div class="beat"><span class="tc">0:29–0:36</span><span class="say">— A estos cinco los atendemos nosotros. Vos atendés a uno solo: el que compra.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo, 5 personajes</span>
+          <span class="chip"><b>Cámara:</b> mismo encuadre siempre, cambia el personaje</span>
+          <span class="chip"><b>Texto:</b> cada frase también en pantalla</span>
+          <span class="chip"><b>Dura:</b> 36s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="ficha" id="g4">
+      <div class="ficha-head">
+        <div class="num">04</div>
+        <div class="ficha-title">
+          <span class="kicker">Roleplay · Autoridad</span>
+          <h3>El que te regatea</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> CarEdge (Ray &amp; Zach Shefska) · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">360k seguidores / 7,9M likes</span> · los roleplays de negociación son su formato central</span>
+          <span><a href="https://www.tiktok.com/@caredge/video/7465460831799676206">tiktok.com/@caredge</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> el espectador se ve a sí mismo perdiendo la negociación, y ve que vos no la perdés. No estás pidiendo confianza: la estás demostrando en 20 segundos. Es el formato que más consultas directas genera.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Tiene un rayón acá. Las cubiertas están gastadas. Y el service no está al día. Te doy [X] menos. <em>Dueño de perfil izquierdo, haciendo del comprador.</em></span></div>
+          <div class="beat"><span class="tc">0:05–0:07</span><span class="do">Corte al perfil derecho: el dueño como vendedor.</span></div>
+          <div class="beat"><span class="tc">0:07–0:18</span><span class="say">— El rayón lo pulimos ayer. Las cubiertas las cambiamos el lunes, tenés la factura ahí. Y el service está al día, mirá el sello. ¿Algo más?</span></div>
+          <div class="beat"><span class="tc">0:18–0:22</span><span class="do">Silencio. Plano del comprador sin saber qué decir.</span></div>
+          <div class="beat"><span class="tc">0:22–0:30</span><span class="say">— Eso pasa cuando tu auto lo defiende alguien que hace esto todos los días. Vos no tenés por qué saber esto. Yo sí.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño en dos perfiles (o dueño + vendedor)</span>
+          <span class="chip"><b>Dónde:</b> al lado de un auto real del salón</span>
+          <span class="chip"><b>Serie:</b> repetible con 8 objeciones distintas</span>
+          <span class="chip"><b>Dura:</b> 30s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="ficha" id="g5">
+      <div class="ficha-head">
+        <div class="num">05</div>
+        <div class="ficha-title">
+          <span class="kicker">Listicle · Utilidad</span>
+          <h3>3 cosas que nunca hagas al vender tu auto</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> Chevy Dude — "9 Fees to NEVER Pay a Car Dealership" · EEUU · YouTube</span>
+          <span><b>Alcance:</b> <span class="views">+5M views</span> · lo convirtió en referente y después en dueño de su propia concesionaria</span>
+          <span><a href="https://www.youtube.com/@ChevyDude">youtube.com/@ChevyDude</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> es contenido que <b>le sirve al que lo mira aunque no te contrate</b>, y por eso se guarda y se manda. Guardar y compartir pesan más que el like en el algoritmo. La lista corta (3, no 9) es lo que lo hace formato vertical.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Tres cosas que nunca tenés que hacer cuando vendés tu auto. La tercera te puede costar el auto entero.</span></div>
+          <div class="beat"><span class="tc">0:05–0:13</span><span class="say">— Una. Nunca lo muestres en la puerta de tu casa. El que viene ve el auto, ve la casa y ve quién vive adentro.</span></div>
+          <div class="beat"><span class="tc">0:13–0:23</span><span class="say">— Dos. Nunca firmes el 08 antes de tener la plata acreditada o contada. Nunca. Ni "confiá en mí", ni "ya te la transferí".</span></div>
+          <div class="beat"><span class="tc">0:23–0:33</span><span class="say">— Tres. Nunca dejes que se lo lleven solos a probar. Ni con el documento en la mano. Ese documento puede ser falso y el auto no vuelve.</span></div>
+          <div class="beat"><span class="tc">0:33–0:40</span><span class="say">— ¿Querés no hacer ninguna de las tres? Dejalo en consignación y todo esto lo hago yo.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo, a cámara</span>
+          <span class="chip"><b>Dónde:</b> parado en el salón, con autos atrás</span>
+          <span class="chip"><b>Texto:</b> 1 / 2 / 3 grandes en pantalla</span>
+          <span class="chip"><b>Serie:</b> hay 6 videos más acá adentro</span>
+          <span class="chip"><b>Dura:</b> 40s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="ficha" id="g6">
+      <div class="ficha-head">
+        <div class="num">06</div>
+        <div class="ficha-title">
+          <span class="kicker">Historia real · Miedo</span>
+          <h3>Se lo llevaron a probar</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> "Ghosted" · EEUU · TikTok — manejó 7 horas para vender su Corvette Z06, el comprador llegó con la plata en efectivo, pidió probarlo y se fue con el auto</span>
+          <span><b>Alcance:</b> <span class="views">cobertura viral</span> · replicado por Motor1 y medios de autos · el seguro no cubrió nada</span>
+          <span><a href="https://www.motor1.com/news/792711/buyer-steals-60000-dollar-corvette/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> el miedo concreto y ajeno se retiene más que cualquier beneficio. No estás diciendo "es peligroso vender solo": estás contando que a un tipo le pasó, con cifra, y que el seguro no le cubrió porque <b>él entregó las llaves</b>. Esa última línea es el gancho de la consignación.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:08</span><span class="say">— Un tipo manejó siete horas para vender su Corvette. El comprador llegó con la plata en efectivo, pidió probarlo... y se fue.</span></div>
+          <div class="beat"><span class="tc">0:08–0:16</span><span class="say">— Setenta mil dólares. El seguro no le cubrió un peso, porque él le dio las llaves por su propia voluntad.</span></div>
+          <div class="beat"><span class="tc">0:16–0:21</span><span class="say">— Y esto no es de allá. Acá pasa todos los meses, con autos de cien mil pesos y de cien mil dólares.</span></div>
+          <div class="beat"><span class="tc">0:21–0:33</span><span class="say">— Cuando el auto está en consignación, el que se sube al asiento del acompañante soy yo. Y antes de que toque la llave, deja documento, domicilio y firma.</span></div>
+          <div class="beat"><span class="tc">Cierre</span><span class="do"><span class="onscreen">Nunca entregues las llaves. Ni un minuto.</span></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo</span>
+          <span class="chip"><b>Tono:</b> serio, sin música, sin efectos</span>
+          <span class="chip"><b>Plano:</b> cerrado, cara</span>
+          <span class="chip"><b>Dura:</b> 33s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="ficha" id="g7">
+      <div class="ficha-head">
+        <div class="num">07</div>
+        <div class="ficha-title">
+          <span class="kicker">Historia real · Seguridad</span>
+          <h3>El AirTag</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> @.a.b.a.z · EEUU · TikTok — compró una Jeep Grand Cherokee y encontró un AirTag escondido adentro</span>
+          <span><b>Alcance:</b> <span class="views">+10,6M views</span></span>
+          <span><a href="https://www.motor1.com/news/776933/facebook-marketplace-airtag-scam/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> es de los videos con más views de todo el nicho, y la vuelta de tuerca es tuya: el original le habla al comprador, vos se lo das vuelta y le hablás al vendedor. <b>Publicar tu auto es publicar tu dirección.</b> Nadie lo piensa hasta que se lo decís.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:07</span><span class="say">— Este video tiene diez millones de vistas: un tipo compra una camioneta y encuentra un AirTag escondido adentro.</span></div>
+          <div class="beat"><span class="tc">0:07–0:12</span><span class="say">— Ahora dalo vuelta. Vos publicás tu auto y ponés tu dirección para que lo vengan a ver.</span></div>
+          <div class="beat"><span class="tc">0:12–0:22</span><span class="say">— El que viene no siempre viene a comprar. Mira el auto, mira la casa, mira la reja, mira quién más vive ahí. Y se va. <em>Ritmo lento en esta línea.</em></span></div>
+          <div class="beat"><span class="tc">0:22–0:32</span><span class="say">— Cuando el auto está acá, tu dirección no aparece en ningún lado. El que quiere verlo viene a [ZONA], toca timbre en un local, y hay cámaras.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo</span>
+          <span class="chip"><b>Recurso:</b> plano del frente del local + cámaras de seguridad</span>
+          <span class="chip"><b>Tono:</b> bajo, sin dramatizar</span>
+          <span class="chip"><b>Dura:</b> 32s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 08 -->
+    <article class="ficha" id="g8">
+      <div class="ficha-head">
+        <div class="num">08</div>
+        <div class="ficha-title">
+          <span class="kicker">Testimonial actuado · Nicho fuerte</span>
+          <h3>Vender siendo mujer</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> mujer publica su VW Jetta 2010 en Facebook Marketplace y recibe de todo menos ofertas de compra · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">viral, cobertura en medios</span> · "If you let me take you out…" fue el titular</span>
+          <span><a href="https://www.motor1.com/news/803778/womans-sells-volkswagen-facebook/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> es el guión con mayor techo de alcance de los 21, porque le habla a un público enorme y desatendido, y porque genera comentarios (cientos de mujeres contando lo mismo). Un comentario vale más que un like. <b>Grabalo con una mujer real</b>, no con el dueño explicándolo.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Publiqué mi auto el martes. Estos son los mensajes que me llegaron en 48 horas. <em>Actriz o clienta real, en su casa, con el celular.</em></span></div>
+          <div class="beat"><span class="tc">0:06–0:20</span><span class="do">Capturas en pantalla, una cada 3 segundos, leídas en voz alta:<br>· "¿Sos vos la de la foto?"<br>· "Si me dejás invitarte un café, te lo compro."<br>· "¿Estás sola cuando lo mostrás?"<br>· "Paso a la noche así charlamos tranquilos."</span></div>
+          <div class="beat"><span class="tc">0:20–0:26</span><span class="say">— Ninguno me preguntó el kilometraje. Ninguno.</span></div>
+          <div class="beat"><span class="tc">0:26–0:36</span><span class="say">— Lo llevé a [CONCESIONARIA]. Lo publicaron ellos, lo mostraron ellos, y a mí me avisaron cuando estaba vendido. No hablé con nadie.</span></div>
+          <div class="beat"><span class="tc">Cierre</span><span class="do"><span class="onscreen">Tu auto se vende. Vos no atendés a nadie.</span> <span class="onscreen">[WHATSAPP]</span></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> mujer a cámara (clienta real o actriz)</span>
+          <span class="chip"><b>Dónde:</b> casa/auto, no el salón</span>
+          <span class="chip"><b>Mensajes:</b> reales, con datos tapados</span>
+          <span class="chip"><b>Dura:</b> 36s</span>
+        </div>
+        <p class="risk">Si usás capturas reales, tapá nombre, foto y teléfono del que escribió. Y si es una clienta real, autorización por escrito.</p>
+      </div>
+    </article>
+
+    <!-- 09 -->
+    <article class="ficha" id="g9">
+      <div class="ficha-head">
+        <div class="num">09</div>
+        <div class="ficha-title">
+          <span class="kicker">Historia real · Plata</span>
+          <h3>El comprobante trucho</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> pareja de Texas que perdió USD 30.000 en la compraventa de una camioneta por Facebook Marketplace · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">viral</span> · uno de varios casos de estafa por Marketplace con millones de views agregadas</span>
+          <span><a href="https://www.motor1.com/news/766656/facebook-truck-30000-dollar-scam/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> el momento exacto en que se pierde la plata es un micro-thriller de 15 segundos. Y el remate no es "vení a vernos": es una <b>regla concreta y gratis</b> que el espectador puede usar. Eso es lo que hace que te crean.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:08</span><span class="say">— Te muestran el comprobante de transferencia en la pantalla del celular. Ves el logo del banco, ves el monto, ves tu nombre.</span></div>
+          <div class="beat"><span class="tc">0:08–0:14</span><span class="say">— Firmás el 08. Entregás las llaves. Se van.</span></div>
+          <div class="beat"><span class="tc">0:14–0:20</span><span class="say">— Y a los dos días el banco te dice que esa transferencia nunca existió. <em>Pausa.</em></span></div>
+          <div class="beat"><span class="tc">0:20–0:32</span><span class="say">— Regla de esta casa, y usala aunque vendas solo: la plata se acredita en tu cuenta, o se cuenta en un banco o en una cueva, antes de firmar nada. Nunca en la vereda, nunca en el auto, nunca "después te mando el comprobante".</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo, mostrando un celular</span>
+          <span class="chip"><b>Tono:</b> seco, sin música</span>
+          <span class="chip"><b>Texto:</b> "NUNCA EN LA VEREDA" en el remate</span>
+          <span class="chip"><b>Dura:</b> 32s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="ficha" id="g10">
+      <div class="ficha-head">
+        <div class="num">10</div>
+        <div class="ficha-title">
+          <span class="kicker">Participación · Comentarios</span>
+          <h3>¿Cuánto creés que vale?</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> formato "guess the price / guess the worth" — @car.expert y decenas de cuentas de tasación · global · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">millones acumulados</span> · es el formato de mayor tasa de comentarios del rubro</span>
+          <span><a href="https://www.tiktok.com/@car.expert/video/7427836176880438535">tiktok.com/@car.expert</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> pedir un número en los comentarios es la forma más barata de comprar alcance: cada comentario reinyecta el video. Y de paso mostrás <b>en cuánto se publica</b> versus <b>cuánto te ofrecen por la ventanilla</b>, que es exactamente tu argumento de venta.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Este [modelo] [año], [km] kilómetros, entró ayer en consignación. ¿Cuánto creés que se puede pedir?</span></div>
+          <div class="beat"><span class="tc">0:05–0:18</span><span class="say">— Único dueño. Service al día, con facturas. Cubiertas nuevas de este año. Y no tiene ni un golpe. <em>Caminando alrededor, un plano por dato.</em></span></div>
+          <div class="beat"><span class="tc">0:18–0:26</span><span class="say">— El que se lo quería comprar por la ventanilla le ofrecía [X]. Nosotros lo publicamos en [Y].</span></div>
+          <div class="beat"><span class="tc">0:26–0:34</span><span class="say">— La diferencia son [Z]. Sacando nuestra comisión, al dueño le quedan [Z menos comisión] más que si lo entregaba.</span></div>
+          <div class="beat"><span class="tc">0:34–0:38</span><span class="say">— Poné en comentarios cuánto habías pensado vos.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño caminando</span>
+          <span class="chip"><b>Cámara:</b> en mano, siguiendo el auto</span>
+          <span class="chip"><b>Serie:</b> uno por cada auto que entra</span>
+          <span class="chip"><b>Dura:</b> 38s</span>
+        </div>
+        <p class="risk">No inventes las cifras. Si el número que decís no es el real, el primer comentario que te lo marque te destruye el video y la reputación.</p>
+      </div>
+    </article>
+
+    <!-- 11 -->
+    <article class="ficha" id="g11">
+      <div class="ficha-head">
+        <div class="num">11</div>
+        <div class="ficha-title">
+          <span class="kicker">Suspenso · Prueba</span>
+          <h3>Ocho meses publicado</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> hook de pregunta + revelación al final, documentado por Central Houston Nissan ("¿cuántos autos creés que vendimos?") · EEUU</span>
+          <span><b>Alcance:</b> <span class="views">millones de views</span> con este mecanismo · un vendedor reportó 10 autos vendidos en su primer mes gracias a un video</span>
+          <span><a href="https://www.cbtnews.com/how-car-dealers-are-leveraging-tiktok-to-drive-sales-8-tips-for-success">cbtnews.com — el mecanismo del hook</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> la pregunta abre un loop que el cerebro necesita cerrar, y eso sostiene la retención hasta el final — la métrica que decide si el video escala. La frase de cierre reencuadra todo el problema: <b>no era el auto, era cómo estaba publicado.</b></p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Este auto estuvo publicado por su dueño ocho meses. Ocho.</span></div>
+          <div class="beat"><span class="tc">0:06–0:12</span><span class="say">— Lo trajo acá un [día]. ¿En cuántos días pensás que se vendió?</span></div>
+          <div class="beat"><span class="tc">0:12–0:22</span><span class="do">Tres planos del auto: frente, interior limpio, tablero con el kilometraje. Sin voz, música baja.</span></div>
+          <div class="beat"><span class="tc">0:22–0:30</span><span class="say">— [N] días. Y en [$] más de lo que le ofrecían por la ventanilla.</span></div>
+          <div class="beat"><span class="tc">0:30–0:34</span><span class="do"><span class="onscreen">No estaba mal el auto.</span> <span class="onscreen">Estaba mal publicado.</span></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño en off + planos del auto</span>
+          <span class="chip"><b>Clave:</b> el número recién en el segundo 22</span>
+          <span class="chip"><b>Serie:</b> uno por cada venta buena</span>
+          <span class="chip"><b>Dura:</b> 34s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 12 -->
+    <article class="ficha" id="g12">
+      <div class="ficha-head">
+        <div class="num">12</div>
+        <div class="ficha-title">
+          <span class="kicker">Transformación · Máximo alcance</span>
+          <h3>Antes / después</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> The Detail Geek (Canadá) y M.A.D. Detailing · YouTube / TikTok</span>
+          <span><b>Alcance:</b> <span class="views">3,7M suscriptores</span> y videos de <span class="views">+5M views</span> · el detailing de autos abandonados es uno de los nichos más vistos de internet</span>
+          <span><a href="https://www.youtube.com/watch?v=FYqffeBj0rY">youtube.com — ejemplo del formato</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> es el único guión de los 21 que <b>no depende del idioma ni del interés en autos</b>. La transformación satisface por sí sola, así que rompe la burbuja y te trae público que no te buscaba. Y demuestra, sin decirlo, que preparás los autos que vendés.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:04</span><span class="do">Interior sucio: migas en la butaca, manchas en la alfombra, polvo en el tablero. Plano cerrado, luz dura.<br><span class="onscreen">Así llegó.</span></span></div>
+          <div class="beat"><span class="tc">0:04–0:24</span><span class="do">Timelapse: aspirado, extractora en la tapicería, plásticos, vidrios, cubiertas, pulido de óptica. Cortes cada 2 segundos, siempre el mismo encuadre antes/después de cada zona.</span></div>
+          <div class="beat"><span class="tc">0:24–0:29</span><span class="do">Mismos planos del arranque, ahora impecables.<br><span class="onscreen">Así se publicó.</span></span></div>
+          <div class="beat"><span class="tc">0:29–0:34</span><span class="say">— Mismo auto. [$X] más de precio de publicación. Esto está incluido en la consignación: no lo pagás aparte.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> sin rostro, voz en off al final</span>
+          <span class="chip"><b>Cámara:</b> trípode fijo, mismo encuadre antes y después</span>
+          <span class="chip"><b>Audio:</b> sonido real (aspiradora, agua) + música</span>
+          <span class="chip"><b>Dura:</b> 34s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 13 -->
+    <article class="ficha" id="g13">
+      <div class="ficha-head">
+        <div class="num">13</div>
+        <div class="ficha-title">
+          <span class="kicker">Prueba social · Recorrido</span>
+          <h3>Acá estaba una Amarok</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> Audi Milwaukee y Central Houston Nissan · EEUU · TikTok — el recorrido por el salón con la pregunta al inicio</span>
+          <span><b>Alcance:</b> Audi Milwaukee <span class="views">+8M views</span> en un video, 87k seguidores, 2,8M likes</span>
+          <span><a href="https://www.cbtnews.com/how-car-dealers-are-leveraging-tiktok-to-drive-sales-8-tips-for-success">cbtnews.com — los números del caso</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> muestra movimiento real del negocio sin decir "somos los mejores". Y esconde el dato clave en el remate: <b>una parte grande de lo que vendés no es tuyo, es de vecinos que lo dejaron</b>. Ahí es donde el espectador entiende que él también puede.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:04</span><span class="say">— Acá estaba una Amarok. <em>Dueño señalando un lugar vacío del playón, caminando.</em></span></div>
+          <div class="beat"><span class="tc">0:04–0:10</span><span class="say">— Acá una Ecosport. Acá un Gol que estuvo cuatro días. Acá un Cronos.</span></div>
+          <div class="beat"><span class="tc">0:10–0:15</span><span class="say">— ¿Cuántos creés que salieron este mes?</span></div>
+          <div class="beat"><span class="tc">0:15–0:22</span><span class="do">Corte a los lugares vacíos, uno por uno, rápido. Música sube.</span></div>
+          <div class="beat"><span class="tc">0:22–0:33</span><span class="say">— [N]. Y [M] de esos ni siquiera eran nuestros. Eran de gente de [ZONA] que los dejó en consignación y se fue a su casa.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño caminando, cámara siguiéndolo</span>
+          <span class="chip"><b>Dónde:</b> playón, preferentemente vacío</span>
+          <span class="chip"><b>Frecuencia:</b> uno por mes, con números reales</span>
+          <span class="chip"><b>Dura:</b> 33s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 14 -->
+    <article class="ficha" id="g14">
+      <div class="ficha-head">
+        <div class="num">14</div>
+        <div class="ficha-title">
+          <span class="kicker">Reacción real · Cierre</span>
+          <h3>La pantalla del homebanking</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> M.A.D. Detailing · el video más visto de la cuenta es, literalmente, la reacción del cliente al ver el resultado</span>
+          <span><b>Alcance:</b> <span class="views">+5M views</span> · el "customer reaction" es el payoff más compartido de todo el rubro automotor</span>
+          <span><a href="https://izea.com/resources/car-cleaning-influencers/">izea.com — los números de las cuentas</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> una cara real reaccionando vence a cualquier argumento. Es el único guión que <b>convierte a los que ya te vieron cinco veces y todavía dudan</b>. Guardalo para publicar después de que ya tengan contexto de qué hacés.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Le estoy por mostrar a [Nombre] cuánto le quedó por su [auto]. Todavía no lo vio. <em>Dueño con el celular contra el pecho, cliente al lado.</em></span></div>
+          <div class="beat"><span class="tc">0:06–0:10</span><span class="do">Da vuelta la pantalla. Plano cerrado a la cara del cliente, no al monto.</span></div>
+          <div class="beat"><span class="tc">0:10–0:20</span><span class="do">Reacción real, sin cortar. Dejala respirar aunque sean 10 segundos de nada.</span></div>
+          <div class="beat"><span class="tc">0:20–0:28</span><span class="say">— [Nombre] lo tuvo publicado [X] meses por su cuenta. Acá tardó [N] días.</span></div>
+          <div class="beat"><span class="tc">0:28–0:33</span><span class="say">— ¿Cuánto hace que tenés el tuyo publicado? <em>Al espectador, mirando a cámara.</em></span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño + cliente real</span>
+          <span class="chip"><b>Cámara:</b> celular en mano, vertical, sin producción</span>
+          <span class="chip"><b>Clave:</b> tapar el monto exacto si el cliente prefiere</span>
+          <span class="chip"><b>Dura:</b> 33s</span>
+        </div>
+        <p class="risk">Autorización escrita del cliente antes de publicar. Un WhatsApp con "sí, podés subirlo" alcanza. Sin eso, no sale.</p>
+      </div>
+    </article>
+
+    <!-- 15 -->
+    <article class="ficha" id="g15">
+      <div class="ficha-head">
+        <div class="num">15</div>
+        <div class="ficha-title">
+          <span class="kicker">Detrás de escena · Proceso</span>
+          <h3>Qué pasa mientras está acá</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> el "day in the life / behind the scenes" de concesionaria — la base sobre la que Mohawk Chevrolet y Audi Milwaukee construyeron sus audiencias</span>
+          <span><b>Alcance:</b> Mohawk <span class="views">+10M views</span> acumuladas · Audi Milwaukee 2,8M likes</span>
+          <span><a href="https://www.cbtnews.com/how-mohawk-chevrolets-office-parody-videos-are-revving-up-social-media-success/">cbtnews.com — cómo lo construyeron</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> la objeción silenciosa de la consignación es "¿y qué hacés vos por ese [X%]?". Este video la contesta sin que nadie la haya dicho en voz alta. <b>Un día por corte</b> hace que se sienta trabajo, no promesa.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Dejás el auto un lunes. Esto es lo que pasa mientras vos estás en tu casa.</span></div>
+          <div class="beat"><span class="tc">0:05–0:11</span><span class="say">— Día 1: informe de dominio, libre deuda de patentes e infracciones, y verificación. Si hay algo raro, aparece hoy y no el día de la firma. <em>Plano de los papeles.</em></span></div>
+          <div class="beat"><span class="tc">0:11–0:16</span><span class="say">— Día 2: limpieza a fondo y fotos. Las fotos venden más que el precio. <em>Plano del detailing.</em></span></div>
+          <div class="beat"><span class="tc">0:16–0:22</span><span class="say">— Día 3: publicado en los portales y mandado a nuestra base de compradores. <em>Plano de la pantalla.</em></span></div>
+          <div class="beat"><span class="tc">0:22–0:30</span><span class="say">— Del día 4 en adelante: atendemos las consultas, filtramos curiosos y acompañamos cada prueba. Vos te enterás de una sola: la que compra.</span></div>
+          <div class="beat"><span class="tc">0:30–0:38</span><span class="say">— Día [N]: transferencia, 08 con firmas certificadas y la plata en tu cuenta. Venís una sola vez, y es para cobrar.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño en off + planos del proceso real</span>
+          <span class="chip"><b>Clave:</b> un plano distinto por día, ritmo rápido</span>
+          <span class="chip"><b>Uso:</b> fijalo en el perfil</span>
+          <span class="chip"><b>Dura:</b> 38s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 16 -->
+    <article class="ficha" id="g16">
+      <div class="ficha-head">
+        <div class="num">16</div>
+        <div class="ficha-title">
+          <span class="kicker">Comparativa · Conversión</span>
+          <h3>Tu auto, tres caminos</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> CarEdge — todo su contenido de "cómo sacarle el mejor valor a tu usado", comparando entregarlo contra venderlo · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">7,9M likes</span> en la cuenta · cientos de miles de views por pieza en este formato</span>
+          <span><a href="https://www.tiktok.com/@caredge/video/7465460831799676206">tiktok.com/@caredge</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> es el más racional de los 21 y el que <b>cierra</b>. Le nombra la opción intermedia que la gente cree que existe y le muestra que no existe: o perdés plata o perdés tiempo. La consignación aparece como la única salida, sin que tengas que decirlo.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Tu auto tiene tres caminos. Solo tres. <em>Dueño frente a una pizarra o con texto en pantalla, tres columnas.</em></span></div>
+          <div class="beat"><span class="tc">0:05–0:13</span><span class="say">— Uno: lo entregás hoy. Te dan [$A] y te vas con la plata en el día. Rápido, seguro, y el más barato de los tres para vos.</span></div>
+          <div class="beat"><span class="tc">0:13–0:23</span><span class="say">— Dos: lo vendés solo. Sacás [$C], que es más. Pero son tres meses, veinte curiosos en la puerta de tu casa, y todo el riesgo es tuyo.</span></div>
+          <div class="beat"><span class="tc">0:23–0:33</span><span class="say">— Tres: consignación. Sacás [$C] menos [X%]. Sin curiosos, sin riesgo, en [N] días promedio, y el auto sigue a tu nombre hasta que se vende.</span></div>
+          <div class="beat"><span class="tc">0:33–0:42</span><span class="say">— El camino del medio, el de sacar todo sin perder tiempo, no existe. Elegí qué preferís perder.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño a cámara</span>
+          <span class="chip"><b>Gráfica:</b> tres columnas fijas en pantalla todo el video</span>
+          <span class="chip"><b>Uso:</b> este es el que se pone en anuncio pago</span>
+          <span class="chip"><b>Dura:</b> 42s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 17 -->
+    <article class="ficha" id="g17">
+      <div class="ficha-head">
+        <div class="num">17</div>
+        <div class="ficha-title">
+          <span class="kicker">Demostración · Oficio</span>
+          <h3>Los primeros 40 segundos</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> @keyswithmike y el género de la inspección de usados · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">viral, cobertura en Motor1</span> · el formato "esto es lo que mira un tasador" se replica en todo el mundo</span>
+          <span><a href="https://www.motor1.com/news/794670/dealership-trade-in-bamboozle/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> mostrar el oficio en detalle es lo que separa a un vendedor de un experto. El espectador no lo puede replicar, y ahí es cuando decide delegarlo. El giro final es clave: <b>"yo te lo digo antes; el comprador te lo va a usar en contra"</b>.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:05</span><span class="say">— Cuando traés tu auto, esto es lo que miro en los primeros cuarenta segundos. <em>Dueño con linterna, recorriendo un auto real.</em></span></div>
+          <div class="beat"><span class="tc">0:05–0:12</span><span class="say">— El borde del capot, con luz de costado. Si la pintura no cierra, tuvo golpe.</span></div>
+          <div class="beat"><span class="tc">0:12–0:19</span><span class="say">— La mano abajo de la alfombra del baúl. Si está húmeda, entra agua por algún lado.</span></div>
+          <div class="beat"><span class="tc">0:19–0:26</span><span class="say">— Las tuercas del guardabarros. Si están marcadas, ese panel se sacó alguna vez.</span></div>
+          <div class="beat"><span class="tc">0:26–0:33</span><span class="say">— Tres cosas en cuarenta segundos. Cada una te baja el precio.</span></div>
+          <div class="beat"><span class="tc">0:33–0:42</span><span class="say">— Yo te las digo antes de publicarlo, para arreglar lo que convenga arreglar. El comprador te las va a encontrar igual, pero para bajarte.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño, manos y linterna</span>
+          <span class="chip"><b>Cámara:</b> celular siguiendo la mano, planos muy cerrados</span>
+          <span class="chip"><b>Serie:</b> hay 5 videos más de "qué miro en..."</span>
+          <span class="chip"><b>Dura:</b> 42s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 18 -->
+    <article class="ficha" id="g18">
+      <div class="ficha-head">
+        <div class="num">18</div>
+        <div class="ficha-title">
+          <span class="kicker">Roleplay · Psicología</span>
+          <h3>El llamado de las nueve</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> el vendedor de Toyota que llama esa misma noche con "el truco viejo" · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">viral, cobertura en Motor1</span> · el género "lo que te dice el vendedor y lo que significa" sostiene cuentas enteras</span>
+          <span><a href="https://www.motor1.com/news/783008/toyota-camry-salesman-old-trick/">motor1.com — el caso completo</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> le explicás al espectador una situación que ya vivió y no supo leer. Esa sensación de "ah, me estaban midiendo" es fortísima. Y te posiciona del lado del vendedor particular, no del comprador: <b>estás de su lado en una negociación que él no sabe que está teniendo.</b></p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Nueve de la noche. Te llama el que a la tarde vino a ver el auto. <em>Dueño con el celular al oído, actuando.</em></span></div>
+          <div class="beat"><span class="tc">0:06–0:14</span><span class="say">— "Mirá, lo estuve pensando... yo te puedo dar [X] menos, pero te lo pago ahora mismo, mañana a primera hora."</span></div>
+          <div class="beat"><span class="tc">0:14–0:20</span><span class="say">— Eso no es una oferta. Es una prueba. <em>Baja el celular, mira a cámara.</em></span></div>
+          <div class="beat"><span class="tc">0:20–0:28</span><span class="say">— Está midiendo cuánto necesitás la plata. Si le contestás rápido, ya sabe la respuesta y te va a bajar otra vez mañana.</span></div>
+          <div class="beat"><span class="tc">0:28–0:38</span><span class="say">— Cuando el auto está en consignación, ese llamado me entra a mí. Y yo no necesito la plata el martes.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo</span>
+          <span class="chip"><b>Dónde:</b> de noche, luz cálida, no el salón</span>
+          <span class="chip"><b>Serie:</b> "lo que dice / lo que significa", 6 frases más</span>
+          <span class="chip"><b>Dura:</b> 38s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 19 -->
+    <article class="ficha" id="g19">
+      <div class="ficha-head">
+        <div class="num">19</div>
+        <div class="ficha-title">
+          <span class="kicker">Marca · Recurrencia</span>
+          <h3>La marca de la casa</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> Mohawk Chevrolet arrancó su serie viral escondiendo patitos de goma por toda la concesionaria · EEUU. Un taller de Florida se volvió viral por un gato gigante · cobertura de NBC News</span>
+          <span><b>Alcance:</b> Mohawk <span class="views">+10M views</span> · el objeto recurrente es lo que hace la cuenta reconocible en el feed</span>
+          <span><a href="https://www.nbcnews.com/news/florida-auto-shop-viral-tiktok-rcna72817">nbcnews.com — el taller y el gato</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> un objeto repetido convierte views sueltas en una marca que se reconoce a medio scroll. Es lo más barato que podés hacer y lo que <b>hace que los otros 20 guiones rindan más</b>, porque encadena todo el contenido bajo un mismo símbolo. Elegí uno y no lo cambies nunca.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Regla nueva de la casa: cada auto que entra en consignación se lleva uno de estos. <em>Muestra el objeto: un patito, un mate, un muñeco, lo que sea, siempre el mismo.</em></span></div>
+          <div class="beat"><span class="tc">0:06–0:18</span><span class="do">Montaje rápido: el objeto arriba del tablero de cada auto del playón, uno por corte, 1,5 segundos cada uno.</span></div>
+          <div class="beat"><span class="tc">0:18–0:26</span><span class="say">— Si ves uno de estos en el tablero, ese auto no es nuestro. Es de un vecino de [ZONA] que lo dejó acá para que se lo vendamos.</span></div>
+          <div class="beat"><span class="tc">0:26–0:32</span><span class="say">— Hoy van [N]. <em>Plano abierto del playón.</em></span></div>
+          <div class="beat"><span class="tc">Después</span><span class="do">A partir de acá, el objeto aparece en TODOS los videos. Siempre. Aunque nadie lo mencione.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño + montaje</span>
+          <span class="chip"><b>Costo:</b> el objeto, y nada más</span>
+          <span class="chip"><b>Clave:</b> elegilo una vez, no lo cambies</span>
+          <span class="chip"><b>Dura:</b> 32s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 20 -->
+    <article class="ficha" id="g20">
+      <div class="ficha-head">
+        <div class="num">20</div>
+        <div class="ficha-title">
+          <span class="kicker">Imán · Tráfico</span>
+          <h3>El auto imán</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> la Mercedes G-Wagon rosa customizada · EEUU · TikTok — se hizo viral y terminó vendida gracias a eso</span>
+          <span><b>Alcance:</b> <span class="views">~5,7M views</span> · atrajo atención de famosos y compradora final</span>
+          <span><a href="https://www.aol.com/lifestyle/custom-pink-g-wagon-went-220251329.html">aol.com — cómo terminó vendida</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> un solo auto raro compra el alcance de todo el lote. No importa si es el más caro: importa que sea el que hace frenar. Y el remate convierte esa atención prestada en tu argumento: <b>el que entra por este mira los otros.</b></p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— El auto que más gente hace frenar en [ZONA] no es el más caro que tenemos. Es este.</span></div>
+          <div class="beat"><span class="tc">0:06–0:16</span><span class="do">Recorrido del auto: el detalle raro primero (el color, el año, el modelo que no se ve más). Planos lentos, música.</span></div>
+          <div class="beat"><span class="tc">0:16–0:24</span><span class="say">— [Modelo] del [año]. No es nuestro: lo dejó [dueño] en consignación hace [X] días.</span></div>
+          <div class="beat"><span class="tc">0:24–0:34</span><span class="say">— Todo el que entra a preguntar por este se va mirando los otros [N]. Por eso al dueño le conviene tenerlo acá y no en la puerta de su casa.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> sin rostro o dueño en off</span>
+          <span class="chip"><b>Cámara:</b> movimientos lentos, buena luz (atardecer)</span>
+          <span class="chip"><b>Frecuencia:</b> cada vez que entre algo raro</span>
+          <span class="chip"><b>Dura:</b> 34s</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 21 -->
+    <article class="ficha" id="g21">
+      <div class="ficha-head">
+        <div class="num">21</div>
+        <div class="ficha-title">
+          <span class="kicker">Objeciones · Transparencia</span>
+          <h3>"Es un curro"</h3>
+        </div>
+      </div>
+      <div class="ficha-body">
+        <div class="ref">
+          <span><b>Original:</b> la cuenta @mischiefusa desarmando en público la estrategia de Central Houston Nissan le generó millones de views extra a la concesionaria · EEUU · TikTok</span>
+          <span><b>Alcance:</b> <span class="views">millones de views</span> en los stitches · el contrapunto también es tu contenido</span>
+          <span><a href="https://www.tiktok.com/@mischiefusa/video/7350086717480865070">tiktok.com/@mischiefusa</a></span>
+        </div>
+        <p class="why"><b>Por qué funciona:</b> contestar la objeción más dura, en público y con números, hace más por la confianza que veinte videos amables. Y el cierre — <b>"si te sigue pareciendo un curro, vendelo solo, en serio"</b> — es lo que lo vuelve creíble: nadie que te quiera estafar te dice eso.</p>
+        <div class="beats">
+          <div class="beat"><span class="tc">0:00–0:06</span><span class="say">— Comentario de ayer: "La consignación es un curro, se quedan con tu plata". <em>Con el comentario en pantalla, real, sin tapar.</em></span></div>
+          <div class="beat"><span class="tc">0:06–0:11</span><span class="say">— Dale. Números.</span></div>
+          <div class="beat"><span class="tc">0:11–0:19</span><span class="say">— La comisión es [X%] y sale del precio de venta. No ponés un peso de tu bolsillo, ni al principio ni nunca.</span></div>
+          <div class="beat"><span class="tc">0:19–0:26</span><span class="say">— Si no se vende, no pagás nada y te llevás el auto. Sin plazo mínimo, sin multa.</span></div>
+          <div class="beat"><span class="tc">0:26–0:33</span><span class="say">— Y el auto sigue a tu nombre hasta el día de la transferencia. El 08 lo firmás vos, no yo.</span></div>
+          <div class="beat"><span class="tc">0:33–0:43</span><span class="say">— Si después de esto te sigue pareciendo un curro, vendelo solo. En serio. Prefiero que estés seguro antes que convencerte.</span></div>
+        </div>
+        <div class="prod">
+          <span class="chip"><b>Quién:</b> dueño solo, sin producción</span>
+          <span class="chip"><b>Tono:</b> tranquilo, sin defenderse</span>
+          <span class="chip"><b>Serie:</b> uno por cada objeción que aparezca en comentarios</span>
+          <span class="chip"><b>Dura:</b> 43s</span>
+        </div>
+        <p class="risk">Los números que digas acá tienen que ser exactamente los del contrato. Si en el video decís "sin plazo mínimo" y el contrato tiene 60 días, ese video se te da vuelta en contra.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <section>
+    <h2>Orden de publicación sugerido</h2>
+    <p>No arranques por el que más te gusta. Arrancá por los que traen gente que no te conoce, y recién después publicá los que cierran. La columna de la derecha dice qué está haciendo cada uno.</p>
+    <div class="cal-wrap">
+      <table class="cal">
+        <thead>
+          <tr><th>Semana</th><th>Guiones</th><th>Qué busca</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>03 · 12 · 08 · 05</td><td>Alcance frío. Que te vea gente de [ZONA] que no te sigue.</td></tr>
+          <tr><td>2</td><td>06 · 07 · 09 · 19</td><td>Miedo concreto + la marca de la casa arranca a repetirse.</td></tr>
+          <tr><td>3</td><td>10 · 17 · 18 · 04</td><td>Autoridad. Que vean que sabés algo que ellos no.</td></tr>
+          <tr><td>4</td><td>01 · 02 · 20 · 13</td><td>Personalidad y prueba de movimiento. Público recurrente.</td></tr>
+          <tr><td>5</td><td>15 · 16 · 11 · 14 · 21</td><td>Cierre. Estos convierten a los que ya te vieron cinco veces.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <h3>Los tres que yo publicaría primero</h3>
+      <p><b>08 — Vender siendo mujer</b> es el de mayor techo de alcance y el que más comentarios genera. <b>12 — Antes / después</b> es el único que funciona con gente a la que no le interesan los autos. <b>16 — Tu auto, tres caminos</b> es el que hay que poner en pauta paga, porque es el único que argumenta de punta a punta.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Todas las referencias son videos y cuentas reales, verificados en agosto de 2026 a través de la cobertura periodística del caso (Motor1, Automotive News, CBT News, CBS, NBC News, Hoodline). Los números de views son los publicados por esas fuentes al momento de la nota y pueden haber cambiado. Ninguno de estos guiones copia material ajeno: todos recrean el formato con material propio.</p>
+  </footer>
+
+</div>
