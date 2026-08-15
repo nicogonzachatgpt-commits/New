@@ -1,0 +1,29 @@
+name: Fetch competitor TikTok videos for viral analysis
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/business-knowledge-startup-fkwyby]
+    paths: ['.github/workflows/competitor-fetch.yml', 'audit/competitors.py']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install yt-dlp
+        run: pip install -U yt-dlp
+      - name: Fetch profiles and top videos
+        run: python audit/competitors.py
+      - name: Commit results back to branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase || true
+          git add -A competitor_data
+          git commit -m "Add competitor TikTok data for viral analysis" || echo "nothing to commit"
+          git push || true
