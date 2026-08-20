@@ -68,6 +68,17 @@ Tabla de referencia que la app puede calcular y enseñar:
 - **Calculadora de premios / ICM** para acordar pagos cuando quedan pocos.
 - Caja/banco: quién compró cuántas fichas, liquidación al final.
 
+### G. Modo en vivo / coach en tiempo real ⭐
+
+La idea de que la app "mire el juego y te vaya dando ayudas". El **feedback inmediato** se puede tener de forma 100% legítima en estos modos (ver la sección de límites más abajo):
+
+- **Coach contra bots**: jugás manos reales contra rivales de IA. Como la app *es* la mesa, conoce todo el estado y te muestra en vivo, calle por calle: tu mejor mano, outs, equity, pot odds y una **sugerencia de acción (fold/call/raise) con la explicación**. Nadie a quien estafar → entrenamiento puro. **Es el modo estrella para mejorar.**
+- **Drill de spots en vivo**: te tira situaciones una atrás de otra, decidís en segundos y recibís feedback instantáneo con el EV de cada opción. Entrena velocidad de decisión.
+- **Segunda pantalla para transmisiones**: mirás un stream/torneo y la app comenta y analiza las manos en tiempo real. Sos espectador, no jugador.
+- **Asesor de estudio con carga manual**: tocás tus cartas + board y te da odds/equity al instante. "En tiempo real", pero pensado para **repasar una mano** o para **partida casera donde todos aceptan** que se usa una ayuda.
+
+Diseño técnico del coach: el motor de la app corre la partida (baraja, acciones de los bots, showdown) y en cada decisión del jugador dispara el evaluador (equity exacta o Monte Carlo) en un Web Worker; la UI muestra la recomendación con un "por qué" en lenguaje simple. Como el estado del juego es interno, no hay que leer ninguna pantalla externa.
+
 ---
 
 ## 2. MVP sugerido (por fases)
@@ -102,6 +113,12 @@ Las estadísticas (VPIP, PFR, bankroll, etc.) se **derivan** de estas tablas; no
 
 ---
 
-## 5. Nota importante
+## 5. Ayuda en tiempo real: dónde está la línea
 
-Las salas online (PokerStars, GGPoker, etc.) **prohíben el software de asistencia en tiempo real (RTA)** y pueden cerrar cuentas por usarlo durante la partida. Esta app apunta a: **estudio post-sesión, partidas caseras en vivo y entrenamiento** — ahí es 100% legítima y es donde más valor da.
+Un software que **mira una partida real donde jugás dinero contra otras personas** y te dice la jugada óptima se llama **RTA (Real-Time Assistance)**. Es hacer trampa a los demás jugadores y hay que evitarlo:
+
+- **Online** (PokerStars, GGPoker, etc.): prohibido explícitamente. Detectan el uso, **cierran la cuenta y confiscan los fondos**.
+- **En vivo / casino**: es trampa (advantage play); expulsión y, en muchos lugares, delito.
+- **Partida casera**: es hacerles trampa a tus amigos, **salvo que todos sepan y acepten** que usás una IA.
+
+Lo que sí es legítimo (y donde esta app da su valor) es el **feedback inmediato en contextos justos**: coach jugando contra bots, drills de entrenamiento, segunda pantalla para transmisiones, estudio post-sesión y carga manual con acuerdo de la mesa (ver módulo **G**). Curiosamente, el coach contra bots da más repeticiones y mejor feedback que espiar una partida real, así que para *mejorar de verdad* es incluso más efectivo. Por eso la app **no** incluye lectura automática de la pantalla/mesa de una partida de dinero real: esa función solo sirve para hacer trampa.
